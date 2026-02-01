@@ -1,0 +1,300 @@
+﻿.contactContainer {
+  min-height: 100vh;
+  margin: 0 auto;
+  overflow-x: hidden;
+  display: flex;
+  background: var(--col7);
+
+  /* ============ LEFT COLUMN - IMAGE ============ */
+  .leftCol {
+    width: 45vw;
+    min-height: 100vh;
+    background-image: url("/assets/mada.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left 30% center;
+    position: relative;
+
+    .logo {
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      width: 180px;
+      z-index: 2;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(255, 255, 255, 0.1) 100%
+      );
+    }
+  }
+
+  /* ============ RIGHT COLUMN - FORM ============ */
+  .rightCol {
+    width: 55vw;
+    min-height: 100vh;
+    padding: 5rem 4rem;
+    padding-top: 8rem;
+    background: var(--col7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      color: var(--col3);
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      letter-spacing: 0.3rem;
+      font-weight: 300;
+      margin-bottom: 0.5rem;
+    }
+
+    .introText {
+      color: var(--col1);
+      font-size: 1rem;
+      letter-spacing: 0.02rem;
+      max-width: 500px;
+      margin-bottom: 2.5rem;
+      opacity: 0.7;
+      line-height: 1.6;
+    }
+  }
+
+  /* ============ CONTACT FORM ============ */
+  .contactForm {
+    max-width: 500px;
+    margin-bottom: 3rem;
+
+    .formRow {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .formGroup {
+      margin-bottom: 1.5rem;
+
+      label {
+        display: block;
+        color: var(--col1);
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        letter-spacing: 0.1rem;
+        margin-bottom: 0.5rem;
+        opacity: 0.6;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        display: block;
+        color: var(--col1);
+        font-weight: 500;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(33, 80, 75, 0.3);
+        padding: 0.75rem 0;
+        font-size: 1rem;
+        font-family: inherit;
+        outline: none;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+          border-bottom-color: var(--col1);
+        }
+
+        &::placeholder {
+          color: var(--col1);
+          opacity: 0.4;
+        }
+      }
+
+      select {
+        cursor: pointer;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%2321504b' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+        background-position: right 0 center;
+        background-repeat: no-repeat;
+        background-size: 1.5em 1.5em;
+      }
+
+      textarea {
+        resize: none;
+        min-height: 80px;
+      }
+    }
+
+    .submitButton {
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 0.15rem;
+      background: var(--col1);
+      color: var(--col7);
+      padding: 1rem 3rem;
+      font-size: 0.85rem;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-top: 1rem;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      .buttonIcon {
+        font-size: 1rem;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover .buttonIcon {
+        transform: translateX(3px);
+      }
+    }
+  }
+
+  /* ============ CONTACT INFO ============ */
+  .contactInfo {
+    max-width: 500px;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(33, 80, 75, 0.15);
+
+    .contactGrid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .contactItem {
+      .contactLabel {
+        text-transform: uppercase;
+        font-size: 0.65rem;
+        letter-spacing: 0.1rem;
+        color: var(--col1);
+        opacity: 0.5;
+        margin-bottom: 0.5rem;
+      }
+
+      .contactValue {
+        font-size: 0.95rem;
+        color: var(--col1);
+        line-height: 1.6;
+
+        a {
+          color: var(--col1);
+          text-decoration: none;
+          transition: opacity 0.3s ease;
+
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+
+    .certRow {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+
+      .certBadge {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-size: 0.75rem;
+        color: var(--col1);
+        opacity: 0.7;
+
+        .certIcon {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  /* ============ RESPONSIVE ============ */
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+
+    .leftCol {
+      width: 100%;
+      min-height: 35vh;
+      height: 35vh;
+    }
+
+    .rightCol {
+      width: 100%;
+      min-height: auto;
+      padding: 3rem 2rem;
+    }
+
+    .contactForm {
+      max-width: 100%;
+
+      .formRow {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+    }
+
+    .contactInfo {
+      max-width: 100%;
+
+      .contactGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .rightCol {
+      padding: 2rem 1.5rem;
+
+      h1 {
+        font-size: 1.8rem;
+        letter-spacing: 0.2rem;
+      }
+
+      .introText {
+        font-size: 0.9rem;
+      }
+    }
+
+    .contactForm .submitButton {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .leftCol {
+      min-height: 25vh;
+      height: 25vh;
+
+      .logo {
+        width: 120px;
+        top: 1rem;
+        left: 1rem;
+      }
+    }
+
+    .rightCol {
+      padding: 1.5rem 1rem;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

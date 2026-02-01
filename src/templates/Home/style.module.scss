@@ -1,0 +1,185 @@
+.homeContainer {
+  background-color: #f4f6f4;
+  color: #222;
+  margin-top: 0rem;
+  overflow-x: hidden;
+  // font-family: Poppins, sans-serif;
+
+  /* ---------------- HERO ---------------- */
+
+  .hero1 {
+    // background: url("https://images.unsplash.com/photo-1702834137742-5d26220954ad?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1160")
+    //   center/cover no-repeat;
+    // gradient background
+    // background: linear-gradient(to left, var(--col4), var(--col5));
+    //video background
+    // background: url("/assets/gotu.mov") center/cover no-repeat;
+
+    height: 160vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+
+    video {
+      position: absolute;
+      top: 30;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      filter: brightness(0.5);
+      -webkit-filter: brightness(0.5);
+    }
+
+    .hero {
+      display: flex;
+
+      height: 100%;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+
+      .content {
+        z-index: 2;
+        color: var(--col2);
+        padding: 0 20px;
+        display: flex;
+        max-width: 1080px;
+        align-items: center;
+        margin-top: 9rem;
+
+        .contentLeft {
+          width: 70%;
+
+          .title {
+            font-size: 2.8rem;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-top: 1.5rem;
+            color: var(--col7);
+          }
+
+          .description {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            margin-top: 1.2rem;
+            line-height: 1.4;
+          }
+
+          .ctaButton {
+            margin-top: 2rem;
+            padding: 1rem 5rem;
+            background-color: var(--col3);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+              background-color: var(--col2);
+              color: var(--col3);
+            }
+          }
+        }
+
+        .contentRight {
+          width: 30%;
+          display: flex;
+          justify-content: right;
+
+          img {
+            width: auto;
+            height: 400px;
+          }
+        }
+      }
+    }
+
+    /* ---------------- SECTORS ---------------- */
+    .section1 {
+      display: flex;
+      justify-content: space-between;
+      gap: 4rem;
+      margin: 6rem auto;
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+      .section1Content {
+        flex: 1 1 30%;
+        min-width: 250px;
+        height: 300px;
+        border-radius: 12px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+        transition: transform 0.4s ease;
+        z-index: 500;
+        &:hover {
+          transform: scale(1.02);
+          -webkit-transform: scale(1.02);
+          -moz-transform: scale(1.02);
+          -ms-transform: scale(1.02);
+          -o-transform: scale(1.02);
+        }
+
+        h2 {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          text-align: center;
+          background: rgba(0, 0, 0, 0.55);
+          color: #fff;
+          padding: 1rem 0;
+          font-size: 1.4rem;
+          letter-spacing: 0.5px;
+        }
+      }
+    }
+  }
+  .ctaBanner {
+    background: var(--col3);
+    color: var(--col7);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    button {
+      background: var(--col7);
+      color: var(--col3);
+      border: none;
+      border-radius: 6px;
+      padding: 0.8rem 1.6rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+      &:hover {
+        background: var(--col3);
+        color: var(--col7);
+        border: 1px solid var(--col7);
+      }
+    }
+  }
+}
