@@ -221,27 +221,23 @@ export default function Contact() {
         {/* MAP SECTION */}
         <section className={styles.mapSection}>
           <div className={styles.mapHeader}>
-            <h2>Zone d&apos;intervention</h2>
+            <h2>Nous trouver</h2>
             <p>
               Nous intervenons principalement en Île-de-France, mais restons
               ouverts à des projets en dehors de ce secteur.
             </p>
           </div>
-          <div className={styles.mapPlaceholder}>
-            <img
-              src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1920&q=80"
-              alt="Carte zone d'intervention"
-            />
-            <div className={styles.mapOverlay}>
-              <div className={styles.mapZones}>
-                <span className={styles.mapZone}>Val-d&apos;Oise (95)</span>
-                <span className={styles.mapZone}>Yvelines (78)</span>
-                <span className={styles.mapZone}>Oise (60)</span>
-                <span className={styles.mapZone}>
-                  Toute l&apos;Île-de-France
-                </span>
-              </div>
-            </div>
+          <div className={styles.mapContainer}>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2614.1053462786836!2d2.231493076078023!3d49.06563218610039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e65d000e2ce7c1%3A0x736e41218f127c8f!2sGAMAT!5e0!3m2!1sfr!2sfr!4v1770298984399!5m2!1sfr!2sfr"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Localisation GAMAT"
+            ></iframe>
           </div>
         </section>
 
