@@ -27,7 +27,7 @@ export default function NosPrestations() {
       description:
         "Conception et rénovation de charpentes traditionnelles ou industrielles, en bois massif ou lamellé-collé.",
       image:
-        "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=600&q=80",
+        "https://images.unsplash.com/uploads/14123892966835548e7bd/14369636?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       icon: "🪵",
     },
   ];
@@ -38,7 +38,7 @@ export default function NosPrestations() {
       description:
         "Pose de portes, fenêtres, escaliers, parquets, aménagements intérieurs sur mesure.",
       image:
-        "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?auto=format&fit=crop&w=600&q=80",
+        "https://images.unsplash.com/photo-1561297331-a9c00b9c2c44?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FycGVudGVyfGVufDB8fDB8fHww",
       icon: "🚪",
     },
     {

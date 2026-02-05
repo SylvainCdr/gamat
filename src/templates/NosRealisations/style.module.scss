@@ -349,30 +349,161 @@
 }
 
 /* ============ RESPONSIVE ============ */
-@media (max-width: 768px) {
-  .heroSection {
-    height: 50vh;
-  }
-
+@media (max-width: 1024px) {
   .galleryGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .statsGrid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
   }
 
   .testimonialsGrid {
-    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    height: 50vh;
+    min-height: 350px;
+  }
+
+  .heroContent h1 {
+    font-size: 2rem;
+  }
+
+  .heroContent p {
+    font-size: 1rem;
+  }
+
+  .introSection {
+    padding: 3rem 1.5rem;
+  }
+
+  .introContent h2 {
+    font-size: 1.6rem;
+  }
+
+  .introContent p {
+    font-size: 1rem;
+  }
+
+  .filterSection {
+    padding: 1.5rem;
   }
 
   .filterButtons {
     flex-direction: column;
     align-items: center;
+    gap: 0.8rem;
   }
 
   .filterBtn {
     width: 100%;
     max-width: 300px;
+    padding: 0.7rem 1.2rem;
+  }
+
+  .gallerySection {
+    padding: 2rem 1.5rem 4rem;
+  }
+
+  .galleryGrid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .cardImageWrapper {
+    height: 220px;
+  }
+
+  .cardContent h3 {
+    font-size: 1.1rem;
+  }
+
+  .statsSection {
+    padding: 3rem 1.5rem;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .statNumber {
+    font-size: 2rem;
+  }
+
+  .statLabel {
+    font-size: 0.85rem;
+  }
+
+  .testimonialsSection {
+    padding: 4rem 1.5rem;
+  }
+
+  .sectionHeader h2 {
+    font-size: 1.6rem;
+  }
+
+  .testimonialsGrid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .testimonialCard {
+    padding: 1.5rem;
+  }
+
+  .ctaSection {
+    padding: 4rem 1.5rem;
+  }
+
+  .ctaContent h2 {
+    font-size: 1.6rem;
+  }
+
+  .ctaContent p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    height: 45vh;
+    min-height: 300px;
+  }
+
+  .heroContent h1 {
+    font-size: 1.7rem;
+  }
+
+  .heroSubtitle {
+    font-size: 0.75rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .statNumber {
+    font-size: 1.8rem;
+  }
+
+  .cardContent {
+    padding: 1.2rem;
+  }
+
+  .cardContent h3 {
+    font-size: 1rem;
+  }
+
+  .cardContent p {
+    font-size: 0.85rem;
+  }
+
+  .testimonialCard p {
+    font-size: 0.9rem;
   }
 }

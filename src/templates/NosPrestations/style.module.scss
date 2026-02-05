@@ -304,20 +304,140 @@
 }
 
 /* ============ RESPONSIVE ============ */
+@media (max-width: 1024px) {
+  .servicesGrid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .whyUsGrid {
+    gap: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .heroSection {
     height: 50vh;
+    min-height: 350px;
   }
 
   .heroContent h1 {
     font-size: 2rem;
   }
 
+  .heroContent p {
+    font-size: 1rem;
+  }
+
+  .introSection {
+    padding: 3rem 1.5rem;
+  }
+
+  .introContent h2 {
+    font-size: 1.6rem;
+  }
+
+  .introContent p {
+    font-size: 1rem;
+  }
+
+  .categorySection {
+    padding: 3rem 1.5rem;
+  }
+
+  .categoryHeader h2 {
+    font-size: 1.6rem;
+  }
+
+  .categoryNumber {
+    font-size: 2.5rem;
+  }
+
   .servicesGrid {
     grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .serviceImageWrapper {
+    height: 180px;
+  }
+
+  .serviceContent {
+    padding: 1.5rem 1.2rem 1.2rem;
+  }
+
+  .serviceContent h3 {
+    font-size: 1.2rem;
+  }
+
+  .whyUsSection {
+    padding: 4rem 1.5rem;
+  }
+
+  .whyUsContent h2 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
   }
 
   .whyUsGrid {
     grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .whyUsItem {
+    padding: 1.5rem;
+  }
+
+  .ctaSection {
+    padding: 4rem 1.5rem;
+  }
+
+  .ctaContent h2 {
+    font-size: 1.6rem;
+  }
+
+  .ctaContent p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    height: 45vh;
+    min-height: 300px;
+  }
+
+  .heroContent h1 {
+    font-size: 1.7rem;
+  }
+
+  .heroSubtitle {
+    font-size: 0.75rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .categoryNumber {
+    font-size: 2rem;
+  }
+
+  .categoryHeader h2 {
+    font-size: 1.4rem;
+  }
+
+  .serviceIcon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    bottom: -15px;
+  }
+
+  .whyUsIcon {
+    font-size: 2rem;
+  }
+
+  .whyUsItem h3 {
+    font-size: 1.1rem;
   }
 }

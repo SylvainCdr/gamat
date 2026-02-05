@@ -394,48 +394,184 @@
 }
 
 /* ============ RESPONSIVE ============ */
+@media (max-width: 1024px) {
+  .mainContent {
+    gap: 2rem;
+  }
+
+  .formWrapper {
+    padding: 2rem;
+  }
+}
+
 @media (max-width: 968px) {
   .mainContent {
     grid-template-columns: 1fr;
   }
 
+  .formWrapper {
+    order: 1;
+  }
+
   .infoWrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
+    order: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
   }
 
   .infoCard {
-    flex: 1 1 45%;
+    flex: none;
   }
 }
 
 @media (max-width: 768px) {
   .heroSection {
     height: 40vh;
+    min-height: 300px;
+  }
+
+  .heroContent h1 {
+    font-size: 2rem;
+  }
+
+  .heroContent p {
+    font-size: 1rem;
+  }
+
+  .mainSection {
+    padding: 3rem 1.5rem;
+  }
+
+  .formWrapper {
+    padding: 1.5rem;
+  }
+
+  .formWrapper h2 {
+    font-size: 1.5rem;
   }
 
   .formRow {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .formGroup input,
+  .formGroup select,
+  .formGroup textarea {
+    padding: 0.8rem;
+    font-size: 0.95rem;
   }
 
   .infoWrapper {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
   .infoCard {
-    flex: 1 1 100%;
+    padding: 1.2rem;
+  }
+
+  .infoCard h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.6rem;
+  }
+
+  .mapSection {
+    padding: 3rem 1.5rem;
+  }
+
+  .mapHeader h2 {
+    font-size: 1.6rem;
   }
 
   .mapPlaceholder {
-    height: 300px;
+    height: 280px;
+    border-radius: 12px;
   }
 
   .mapZones {
     flex-direction: column;
     align-items: center;
+    gap: 0.8rem;
+  }
+
+  .mapZone {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .reassuranceSection {
+    padding: 3rem 1.5rem;
   }
 
   .reassuranceGrid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .reassuranceItem {
+    padding: 1rem;
+  }
+
+  .reassuranceIcon {
+    font-size: 1.5rem;
+  }
+
+  .reassuranceItem h4 {
+    font-size: 1rem;
+  }
+
+  .reassuranceItem p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    height: 35vh;
+    min-height: 250px;
+  }
+
+  .heroContent h1 {
+    font-size: 1.7rem;
+  }
+
+  .heroSubtitle {
+    font-size: 0.75rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .mainSection {
+    padding: 2rem 1rem;
+  }
+
+  .formWrapper {
+    padding: 1.2rem;
+  }
+
+  .formWrapper h2 {
+    font-size: 1.3rem;
+  }
+
+  .formIntro {
+    font-size: 0.9rem;
+  }
+
+  .submitBtn {
+    padding: 0.9rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .mapSection {
+    padding: 2rem 1rem;
+  }
+
+  .mapPlaceholder {
+    height: 220px;
+  }
+
+  .reassuranceGrid {
+    grid-template-columns: 1fr;
   }
 }

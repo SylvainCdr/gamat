@@ -27,9 +27,10 @@
   min-height: 4rem;
   max-height: 4rem;
   width: 100%;
-  padding: 0 1rem 0 0;
+  padding: 0 1.5rem 0 0;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
 }
 
 .logoWrapper img {
@@ -59,7 +60,7 @@
 }
 
 .menuToggle:hover {
-  background: var(--col7);
+  background: var(--col3);
   border: 1px solid var(--col3);
 }
 
@@ -326,32 +327,57 @@
 }
 
 /* ============ RESPONSIVE ============ */
-@media (max-width: 768px) {
-  .navbar {
-    top: 10px;
+@media (max-width: 968px) {
+  .menuLinks {
+    width: 100%;
   }
 
-  .wrapper {
-    padding-inline: 1rem;
+  .closeButton {
+    top: 1.5rem;
+    right: 6rem;
+    width: 45px;
+    height: 45px;
+
+    span {
+      width: 20px;
+    }
+  }
+
+  .navbarBtn {
+    display: none;
+  }
+
+  .menuBgContainer {
+    display: none;
+  }
+
+  .menuContent {
+    background: var(--col2);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    top: 0;
   }
 
   .menuBar {
-    padding: 0.5rem 1rem;
+    padding: 0 1rem;
+    height: 3.5rem;
+    min-height: 3.5rem;
+    max-height: 3.5rem;
   }
 
   .logoWrapper img {
     width: 120px;
     height: auto;
-  }
-
-  .btn {
-    padding: 10px 16px;
-    font-size: 12px;
+    padding: 0 1rem;
   }
 
   .menuToggle {
     width: 40px;
     height: 40px;
+    margin-right: 0.5rem;
   }
 
   .toggleLineTop,
@@ -360,16 +386,73 @@
   }
 
   .menuLinks {
-    width: 100%;
-    padding: 20px;
+    padding: 70px 20px 30px;
+  }
+
+  .closeButton {
+    top: 1.2rem;
+    right: 5rem;
+    width: 40px;
+    height: 40px;
+
+    span {
+      width: 18px;
+    }
+  }
+
+  .menuMain li {
+    margin-bottom: 1.2rem;
   }
 
   .menuMain li a {
-    font-size: 2.5rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .menuBar {
+    height: 3rem;
+    min-height: 3rem;
+    max-height: 3rem;
+    padding: 0 0.8rem;
   }
 
-  .menuSocials ul {
-    flex-direction: column;
-    gap: 0.8rem;
+  .logoWrapper img {
+    width: 100px;
+    padding: 0 0.5rem;
+  }
+
+  .menuToggle {
+    width: 36px;
+    height: 36px;
+    margin-right: 0.3rem;
+    flex-shrink: 0;
+  }
+
+  .toggleLineTop,
+  .toggleLineBottom {
+    width: 20px;
+  }
+
+  .menuMain li a {
+    font-size: 1.4rem;
+  }
+
+  .closeButton {
+    top: 1rem;
+    right: 4rem;
+    width: 36px;
+    height: 36px;
+
+    span {
+      width: 16px;
+    }
+  }
+  .btn {
+    display: none;
+  }
+
+  .menuLinks {
+    padding: 60px 15px 20px;
   }
 }
