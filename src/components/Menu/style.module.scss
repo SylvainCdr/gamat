@@ -6,25 +6,31 @@
 /* ============ NAVBAR ============ */
 .navbar {
   position: fixed;
-  top: 10px;
-  width: 100%;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 4rem;
   z-index: 9999;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+
 }
 
-.wrapper {
-  max-width: 1440px;
-  padding-inline: 2rem;
-  margin-inline: auto;
-}
+
 
 .menuBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.134);
+  background: var(--col2);
   backdrop-filter: blur(20px);
-  border-radius: 16px;
-  padding-right: 1rem;
+
+  height: 4rem;
+  min-height: 4rem;
+  max-height: 4rem;
+  width: 100%;
+  padding: 0 1rem 0 0;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -32,6 +38,7 @@
 .logoWrapper img {
   border-radius: 8px;
   transition: transform 0.3s ease;
+  padding : 0rem 2rem;
 }
 
 .logoWrapper img:hover {
@@ -52,6 +59,7 @@
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
+    
 }
 
 .menuToggle:hover {
@@ -90,6 +98,7 @@
   transition: all 0.3s ease;
   font-size: 14px;
   letter-spacing: 0.5px;
+  margin-right : 2rem;
 }
 
 .videoBackground {
@@ -106,6 +115,7 @@
   background: linear-gradient(135deg, var(--col3), var(--col3));
   color: white;
   box-shadow: 0 4px 15px rgba(33, 80, 75, 0.3);
+ 
 }
 
 .navbarBtn:hover {

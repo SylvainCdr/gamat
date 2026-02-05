@@ -135,38 +135,28 @@ table {
 
 
 
+
 body {
-
-margin: auto;
-color: black;
-width: 100%;
-font-family: 'Quicksand', sans-serif; 
-/* font-family: 'Poppins', sans-serif; */
-
-
+  margin: auto;
+  color: black;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
 }
-  
-  :root {
-    --col1: #21504b;
-    --col2: #f7f2e4;
-    --col3: #813405;
-    --col4: #a2c0d5;
-    --col5: #e9f0fb;
-    --col6: #def0ff;
-    --col7: #fff;
-    --col8: #6D454C;
-    --col9: #a53f2b;
-    --col10: #ab2346;
-    --col11: #823038;
-    --col12: #533b4d;
-    --col13: #0f0326;
-    --col15: #542344;
-    --col16: #B1740F ;
 
-    
-    
-    
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Droid Serif', serif;
+  font-weight: 700;
+}
 
-    
+:root {
+  --col1: #fff;
+  --col2: #303843;
+  --col3: #E75B0F;
+  --col4: #F5F5F5;
+  --col5: #8A95A5;
+  --col6: #1a1a1a;
+  --col7: #ffffff;
+  --col8: #303843;
+}
 
-  }
