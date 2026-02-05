@@ -103,6 +103,16 @@ export default function Menu() {
               <span></span>
             </button>
 
+            {/* Logo */}
+            <div className={styles.menuLogo}>
+              <Image
+                src="/assets/logos/44.svg"
+                alt="GAMAT"
+                width={600}
+                height={300}
+              />
+            </div>
+
             {/* Main Menu */}
             <div className={styles.menuMain}>
               <ul>
@@ -159,7 +169,7 @@ export default function Menu() {
                 src="/assets/logos/22.png"
                 alt="RAVINA Medicinals - Premium Centella Asiatica from Madagascar"
                 width={150}
-                height={30}
+                height={40}
               />
             </Link>
           </div>

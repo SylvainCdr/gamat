@@ -134,7 +134,7 @@
 
 .servicesGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -306,12 +306,26 @@
 /* ============ RESPONSIVE ============ */
 @media (max-width: 1024px) {
   .servicesGrid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+    max-width: 900px;
   }
 
   .whyUsGrid {
     gap: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+  }
+
+  .whyUsGrid {
+    grid-template-columns: 1fr;
+    max-width: 350px;
+    margin: 0 auto;
   }
 }
 
@@ -354,9 +368,7 @@
   }
 
   .servicesGrid {
-    grid-template-columns: 1fr;
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 100%;
   }
 
   .serviceImageWrapper {
@@ -381,9 +393,7 @@
   }
 
   .whyUsGrid {
-    grid-template-columns: 1fr;
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 100%;
   }
 
   .whyUsItem {

@@ -135,7 +135,7 @@
 
 .galleryGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   max-width: 1400px;
   margin: 0 auto;
@@ -351,12 +351,27 @@
 /* ============ RESPONSIVE ============ */
 @media (max-width: 1024px) {
   .galleryGrid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
 
   .testimonialsGrid {
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .galleryGrid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .testimonialsGrid {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+    margin: 0 auto;
   }
 }
 
@@ -407,9 +422,7 @@
   }
 
   .galleryGrid {
-    grid-template-columns: 1fr;
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 100%;
   }
 
   .cardImageWrapper {
@@ -446,9 +459,7 @@
   }
 
   .testimonialsGrid {
-    grid-template-columns: 1fr;
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 100%;
   }
 
   .testimonialCard {
