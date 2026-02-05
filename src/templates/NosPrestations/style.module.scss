@@ -1,0 +1,323 @@
+.prestationsContainer {
+  background-color: #f8f9fa;
+  color: var(--col2);
+  font-family: "Poppins", sans-serif;
+}
+
+/* ============ HERO ============ */
+.heroSection {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(48, 56, 67, 0.85) 0%,
+    rgba(48, 56, 67, 0.6) 100%
+  );
+  z-index: 1;
+}
+
+.heroImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.heroSubtitle {
+  display: inline-block;
+  background: var(--col3);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.heroContent h1 {
+  font-family: "Droid Serif", serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 300;
+}
+
+/* ============ INTRO ============ */
+.introSection {
+  padding: 4rem 2rem;
+  background: #fff;
+}
+
+.introContent {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.introContent h2 {
+  font-family: "Droid Serif", serif;
+  font-size: 2rem;
+  color: var(--col2);
+  margin-bottom: 1.5rem;
+}
+
+.introContent p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+/* ============ CATEGORY SECTION ============ */
+.categorySection {
+  padding: 4rem 2rem;
+}
+
+.altBg {
+  background: #fff;
+}
+
+.categoryHeader {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.categoryNumber {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--col3);
+  opacity: 0.3;
+  margin-bottom: 0.5rem;
+}
+
+.categoryHeader h2 {
+  font-family: "Droid Serif", serif;
+  font-size: 2rem;
+  color: var(--col2);
+  margin-bottom: 0.5rem;
+}
+
+.categoryHeader p {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 300;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.serviceCard {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+}
+
+.serviceCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.serviceImageWrapper {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.serviceImageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.serviceCard:hover .serviceImageWrapper img {
+  transform: scale(1.1);
+}
+
+.serviceIcon {
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: var(--col3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 15px rgba(231, 91, 15, 0.3);
+}
+
+.serviceContent {
+  padding: 2rem 1.5rem 1.5rem;
+}
+
+.serviceContent h3 {
+  font-family: "Droid Serif", serif;
+  font-size: 1.3rem;
+  color: var(--col2);
+  margin-bottom: 0.8rem;
+}
+
+.serviceContent p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* ============ WHY US ============ */
+.whyUsSection {
+  padding: 5rem 2rem;
+  background: var(--col2);
+}
+
+.whyUsContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.whyUsContent h2 {
+  font-family: "Droid Serif", serif;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.whyUsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.whyUsItem {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.whyUsItem:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+}
+
+.whyUsIcon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.whyUsItem h3 {
+  font-family: "Droid Serif", serif;
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.whyUsItem p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+}
+
+/* ============ CTA ============ */
+.ctaSection {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, var(--col3) 0%, #c94d0d 100%);
+  text-align: center;
+}
+
+.ctaContent {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.ctaContent h2 {
+  font-family: "Droid Serif", serif;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.ctaContent p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.ctaContent button {
+  padding: 1rem 3rem;
+  background: #fff;
+  color: var(--col3);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ctaContent button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+  .heroSection {
+    height: 50vh;
+  }
+
+  .heroContent h1 {
+    font-size: 2rem;
+  }
+
+  .servicesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .whyUsGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,3 +1,3 @@
-import About from '@/templates/About/About';
+import NosPrestations from '@/templates/NosPrestations/NosPrestations';
 
-export default About;
+export default NosPrestations;

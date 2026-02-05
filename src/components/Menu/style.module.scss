@@ -14,10 +14,7 @@
   background: transparent;
   margin: 0;
   padding: 0;
-
 }
-
-
 
 .menuBar {
   display: flex;
@@ -38,7 +35,7 @@
 .logoWrapper img {
   border-radius: 8px;
   transition: transform 0.3s ease;
-  padding : 0rem 2rem;
+  padding: 0rem 2rem;
 }
 
 .logoWrapper img:hover {
@@ -59,7 +56,6 @@
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
-    
 }
 
 .menuToggle:hover {
@@ -98,7 +94,7 @@
   transition: all 0.3s ease;
   font-size: 14px;
   letter-spacing: 0.5px;
-  margin-right : 2rem;
+  margin-right: 2rem;
 }
 
 .videoBackground {
@@ -115,7 +111,6 @@
   background: linear-gradient(135deg, var(--col3), var(--col3));
   color: white;
   box-shadow: 0 4px 15px rgba(33, 80, 75, 0.3);
- 
 }
 
 .navbarBtn:hover {
@@ -181,6 +176,19 @@
 .menuBgImg.active img {
   opacity: 1;
   transform: scale(1.1);
+  animation: slowZoom 8s ease-in-out infinite alternate;
+}
+
+@keyframes slowZoom {
+  0% {
+    transform: scale(1.05) translateX(0);
+  }
+  50% {
+    transform: scale(1.1) translateX(-1%);
+  }
+  100% {
+    transform: scale(1.15) translateX(1%);
+  }
 }
 
 .menuContent {
@@ -195,7 +203,7 @@
 }
 
 .menuLinks {
-  background: rgba(33, 80, 75, 0.85);
+  background: rgba(48, 56, 67, 0.92);
   backdrop-filter: blur(30px);
   width: 50%;
   height: 100%;
@@ -206,6 +214,46 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  position: relative;
+}
+
+/* Close Button */
+.closeButton {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+
+  span {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: #fff;
+    transition: all 0.3s ease;
+
+    &:first-child {
+      transform: rotate(45deg);
+    }
+
+    &:last-child {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &:hover {
+    border-color: var(--col3);
+    background: var(--col3);
+    transform: rotate(90deg);
+  }
 }
 
 .menuMain {
@@ -241,7 +289,7 @@
 }
 
 .menuMain li a:hover {
-  color: var(--col2);
+  color: var(--col3);
   transform: translateX(10px);
 }
 

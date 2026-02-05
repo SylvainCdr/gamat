@@ -1,300 +1,441 @@
-﻿.contactContainer {
-  min-height: 100vh;
-  margin: 0 auto;
-  overflow-x: hidden;
+.contactContainer {
+  background-color: #f8f9fa;
+  color: var(--col2);
+  font-family: "Poppins", sans-serif;
+}
+
+/* ============ HERO ============ */
+.heroSection {
+  position: relative;
+  height: 50vh;
+  min-height: 350px;
   display: flex;
-  background: var(--col7);
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
 
-  /* ============ LEFT COLUMN - IMAGE ============ */
-  .leftCol {
-    width: 45vw;
-    min-height: 100vh;
-    background-image: url("/assets/mada.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left 30% center;
-    position: relative;
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(48, 56, 67, 0.85) 0%,
+    rgba(48, 56, 67, 0.6) 100%
+  );
+  z-index: 1;
+}
 
-    .logo {
-      position: absolute;
-      top: 2rem;
-      left: 2rem;
-      width: 180px;
-      z-index: 2;
-    }
+.heroImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
 
-    &::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(255, 255, 255, 0.1) 100%
-      );
-    }
+.heroContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.heroSubtitle {
+  display: inline-block;
+  background: var(--col3);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.heroContent h1 {
+  font-family: "Droid Serif", serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.heroContent p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 300;
+}
+
+/* ============ MAIN SECTION ============ */
+.mainSection {
+  padding: 4rem 2rem;
+}
+
+.mainContent {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ============ FORM ============ */
+.formWrapper {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.formWrapper h2 {
+  font-family: "Droid Serif", serif;
+  font-size: 1.8rem;
+  color: var(--col2);
+  margin-bottom: 0.5rem;
+}
+
+.formIntro {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--col2);
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  padding: 0.9rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: var(--col3);
+  box-shadow: 0 0 0 3px rgba(231, 91, 15, 0.1);
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.formGroup select {
+  cursor: pointer;
+}
+
+.submitBtn {
+  padding: 1rem 2rem;
+  background: var(--col3);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.submitBtn:hover {
+  background: #c94d0d;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(231, 91, 15, 0.3);
+}
+
+/* ============ INFO WRAPPER ============ */
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.infoCard {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.infoCard h3 {
+  font-family: "Droid Serif", serif;
+  font-size: 1.2rem;
+  color: var(--col2);
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.infoItem {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.infoItem:last-child {
+  margin-bottom: 0;
+}
+
+.infoIcon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.infoItem strong {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--col2);
+  margin-bottom: 0.3rem;
+}
+
+.infoItem a,
+.infoItem p {
+  font-size: 0.95rem;
+  color: #555;
+  text-decoration: none;
+  font-weight: 300;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.infoItem a:hover {
+  color: var(--col3);
+}
+
+.scheduleItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.95rem;
+}
+
+.scheduleItem:last-child {
+  border-bottom: none;
+}
+
+.scheduleItem span:first-child {
+  color: var(--col2);
+  font-weight: 500;
+}
+
+.scheduleItem span:last-child {
+  color: #666;
+  font-weight: 300;
+}
+
+.ctaCard {
+  background: var(--col2);
+  text-align: center;
+}
+
+.ctaCard h3 {
+  color: #fff;
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.ctaCard p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.2rem;
+  font-weight: 300;
+}
+
+.callBtn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: var(--col3);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.callBtn:hover {
+  background: #c94d0d;
+  transform: translateY(-2px);
+}
+
+/* ============ MAP SECTION ============ */
+.mapSection {
+  padding: 4rem 2rem;
+  background: #fff;
+}
+
+.mapHeader {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.mapHeader h2 {
+  font-family: "Droid Serif", serif;
+  font-size: 2rem;
+  color: var(--col2);
+  margin-bottom: 0.5rem;
+}
+
+.mapHeader p {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 300;
+}
+
+.mapPlaceholder {
+  position: relative;
+  height: 400px;
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mapPlaceholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mapOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(48, 56, 67, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapZones {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mapZone {
+  background: var(--col3);
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* ============ REASSURANCE ============ */
+.reassuranceSection {
+  padding: 4rem 2rem;
+  background: var(--col2);
+}
+
+.reassuranceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.reassuranceItem {
+  padding: 1.5rem;
+}
+
+.reassuranceIcon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.reassuranceItem h4 {
+  font-family: "Droid Serif", serif;
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+
+.reassuranceItem p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 968px) {
+  .mainContent {
+    grid-template-columns: 1fr;
   }
 
-  /* ============ RIGHT COLUMN - FORM ============ */
-  .rightCol {
-    width: 55vw;
-    min-height: 100vh;
-    padding: 5rem 4rem;
-    padding-top: 8rem;
-    background: var(--col7);
-    display: flex;
+  .infoWrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .infoCard {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    height: 40vh;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .infoWrapper {
     flex-direction: column;
-    justify-content: center;
-
-    h1 {
-      color: var(--col3);
-      text-transform: uppercase;
-      font-size: 2.5rem;
-      letter-spacing: 0.3rem;
-      font-weight: 300;
-      margin-bottom: 0.5rem;
-    }
-
-    .introText {
-      color: var(--col1);
-      font-size: 1rem;
-      letter-spacing: 0.02rem;
-      max-width: 500px;
-      margin-bottom: 2.5rem;
-      opacity: 0.7;
-      line-height: 1.6;
-    }
   }
 
-  /* ============ CONTACT FORM ============ */
-  .contactForm {
-    max-width: 500px;
-    margin-bottom: 3rem;
-
-    .formRow {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-    }
-
-    .formGroup {
-      margin-bottom: 1.5rem;
-
-      label {
-        display: block;
-        color: var(--col1);
-        text-transform: uppercase;
-        font-size: 0.7rem;
-        letter-spacing: 0.1rem;
-        margin-bottom: 0.5rem;
-        opacity: 0.6;
-      }
-
-      input,
-      select,
-      textarea {
-        width: 100%;
-        display: block;
-        color: var(--col1);
-        font-weight: 500;
-        background: transparent;
-        border: none;
-        border-bottom: 1px solid rgba(33, 80, 75, 0.3);
-        padding: 0.75rem 0;
-        font-size: 1rem;
-        font-family: inherit;
-        outline: none;
-        transition: border-color 0.3s ease;
-
-        &:focus {
-          border-bottom-color: var(--col1);
-        }
-
-        &::placeholder {
-          color: var(--col1);
-          opacity: 0.4;
-        }
-      }
-
-      select {
-        cursor: pointer;
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%2321504b' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
-        background-position: right 0 center;
-        background-repeat: no-repeat;
-        background-size: 1.5em 1.5em;
-      }
-
-      textarea {
-        resize: none;
-        min-height: 80px;
-      }
-    }
-
-    .submitButton {
-      text-transform: uppercase;
-      font-weight: 400;
-      letter-spacing: 0.15rem;
-      background: var(--col1);
-      color: var(--col7);
-      padding: 1rem 3rem;
-      font-size: 0.85rem;
-      border: none;
-      border-radius: 2px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.75rem;
-      margin-top: 1rem;
-
-      &:hover {
-        opacity: 0.7;
-      }
-
-      .buttonIcon {
-        font-size: 1rem;
-        transition: transform 0.3s ease;
-      }
-
-      &:hover .buttonIcon {
-        transform: translateX(3px);
-      }
-    }
+  .infoCard {
+    flex: 1 1 100%;
   }
 
-  /* ============ CONTACT INFO ============ */
-  .contactInfo {
-    max-width: 500px;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(33, 80, 75, 0.15);
-
-    .contactGrid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-    }
-
-    .contactItem {
-      .contactLabel {
-        text-transform: uppercase;
-        font-size: 0.65rem;
-        letter-spacing: 0.1rem;
-        color: var(--col1);
-        opacity: 0.5;
-        margin-bottom: 0.5rem;
-      }
-
-      .contactValue {
-        font-size: 0.95rem;
-        color: var(--col1);
-        line-height: 1.6;
-
-        a {
-          color: var(--col1);
-          text-decoration: none;
-          transition: opacity 0.3s ease;
-
-          &:hover {
-            opacity: 0.6;
-          }
-        }
-      }
-    }
-
-    .certRow {
-      margin-top: 2rem;
-      display: flex;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-
-      .certBadge {
-        display: flex;
-        align-items: center;
-        gap: 0.4rem;
-        font-size: 0.75rem;
-        color: var(--col1);
-        opacity: 0.7;
-
-        .certIcon {
-          font-size: 0.9rem;
-        }
-      }
-    }
+  .mapPlaceholder {
+    height: 300px;
   }
 
-  /* ============ RESPONSIVE ============ */
-  @media screen and (max-width: 1024px) {
+  .mapZones {
     flex-direction: column;
-
-    .leftCol {
-      width: 100%;
-      min-height: 35vh;
-      height: 35vh;
-    }
-
-    .rightCol {
-      width: 100%;
-      min-height: auto;
-      padding: 3rem 2rem;
-    }
-
-    .contactForm {
-      max-width: 100%;
-
-      .formRow {
-        grid-template-columns: 1fr;
-        gap: 0;
-      }
-    }
-
-    .contactInfo {
-      max-width: 100%;
-
-      .contactGrid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-      }
-    }
+    align-items: center;
   }
 
-  @media screen and (max-width: 768px) {
-    .rightCol {
-      padding: 2rem 1.5rem;
-
-      h1 {
-        font-size: 1.8rem;
-        letter-spacing: 0.2rem;
-      }
-
-      .introText {
-        font-size: 0.9rem;
-      }
-    }
-
-    .contactForm .submitButton {
-      width: 100%;
-      justify-content: center;
-    }
-  }
-
-  @media screen and (max-width: 480px) {
-    .leftCol {
-      min-height: 25vh;
-      height: 25vh;
-
-      .logo {
-        width: 120px;
-        top: 1rem;
-        left: 1rem;
-      }
-    }
-
-    .rightCol {
-      padding: 1.5rem 1rem;
-
-      h1 {
-        font-size: 1.5rem;
-      }
-    }
+  .reassuranceGrid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

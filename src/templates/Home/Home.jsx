@@ -56,149 +56,102 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PRESTATIONS */}
-      <section className={styles.servicesSection}>
+      {/* NOS MÉTIERS - APERÇU */}
+      <section className={styles.servicesPreview}>
         <div className={styles.sectionHeader}>
-          <h2>Nos Prestations</h2>
-          <p>Un savoir-faire complet pour tous vos projets</p>
+          <span className={styles.sectionTag}>Ce que nous faisons</span>
+          <h2>Nos Métiers</h2>
+          <div className={styles.sectionDivider}></div>
+          <p>Tout corps d&apos;état pour vos projets</p>
         </div>
-
-        {/* Gros Oeuvre */}
-        <div className={styles.serviceCategory}>
-          <h3 className={styles.categoryTitle}>Gros Œuvre</h3>
-          <div className={styles.servicesGrid}>
-            <div className={styles.serviceCard}>
-              <img
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80"
-                alt="Maçonnerie"
-              />
-              <div className={styles.serviceCardContent}>
-                <h4>Maçonnerie</h4>
-                <p>
-                  Construction de murs, extensions, terrasses, dalles,
-                  fondations. GAMAT vous garantit un travail solide et durable.
-                </p>
-              </div>
-            </div>
-            <div className={styles.serviceCard}>
-              <img
-                src="https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=600&q=80"
-                alt="Couverture"
-              />
-              <div className={styles.serviceCardContent}>
-                <h4>Couverture</h4>
-                <p>
-                  Réalisation et rénovation de toitures en tuiles, ardoises,
-                  zinc. Étanchéité, fenêtres de toit, zinguerie.
-                </p>
-              </div>
-            </div>
-            <div className={styles.serviceCard}>
-              <img
-                src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=600&q=80"
-                alt="Charpente"
-              />
-              <div className={styles.serviceCardContent}>
-                <h4>Charpente</h4>
-                <p>
-                  Conception et rénovation de charpentes traditionnelles ou
-                  industrielles, en bois massif ou lamellé-collé.
-                </p>
-              </div>
-            </div>
+        <div className={styles.servicesPreviewGrid}>
+          <div className={styles.servicePreviewCard}>
+            <div className={styles.servicePreviewIcon}>🏗️</div>
+            <h3>Gros Œuvre</h3>
+            <p>
+              Maçonnerie, couverture, charpente — les fondations solides de
+              votre projet.
+            </p>
+          </div>
+          <div className={styles.servicePreviewCard}>
+            <div className={styles.servicePreviewIcon}>🔧</div>
+            <h3>Second Œuvre</h3>
+            <p>
+              Menuiserie, plomberie, électricité — l&apos;aménagement de vos
+              espaces.
+            </p>
+          </div>
+          <div className={styles.servicePreviewCard}>
+            <div className={styles.servicePreviewIcon}>✨</div>
+            <h3>Finitions</h3>
+            <p>
+              Plâtrerie, peinture, isolation — les touches finales qui font la
+              différence.
+            </p>
           </div>
         </div>
+        <div className={styles.servicesPreviewCta}>
+          <button
+            onClick={() => router.push("/gamat-construction-et-renovation")}
+          >
+            Découvrir toutes nos prestations
+          </button>
+        </div>
+      </section>
 
-        {/* Second Oeuvre */}
-        <div className={styles.serviceCategory}>
-          <h3 className={styles.categoryTitle}>Second Œuvre</h3>
-          <div className={styles.servicesGrid}>
-            <div className={styles.serviceCard}>
-              <img
-                src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?auto=format&fit=crop&w=600&q=80"
-                alt="Menuiserie"
-              />
-              <div className={styles.serviceCardContent}>
-                <h4>Menuiserie</h4>
-                <p>
-                  Pose de portes, fenêtres, escaliers, parquets, aménagements
-                  intérieurs sur mesure.
-                </p>
-              </div>
-            </div>
-            <div className={styles.serviceCard}>
-              <img
-                src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=600&q=80"
-                alt="Plomberie"
-              />
-              <div className={styles.serviceCardContent}>
-                <h4>Plomberie</h4>
-                <p>
-                  Création ou rénovation de salles de bain, cuisine, sanitaires.
-                  Raccordements, évacuations, dépannage.
-                </p>
-              </div>
-            </div>
-            <div className={styles.serviceCard}>
-              <img
-                src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80"
-                alt="Électricité"
-              />
-              <div className={styles.serviceCardContent}>
-                <h4>Électricité</h4>
-                <p>
-                  Installation électrique complète, mise aux normes, éclairage
-                  intérieur/extérieur, domotique.
-                </p>
-              </div>
-            </div>
+      {/* CHIFFRES CLÉS */}
+      <section className={styles.statsSection}>
+        <div className={styles.statsGrid}>
+          <div className={styles.statItem}>
+            <span className={styles.statNumber}>15+</span>
+            <span className={styles.statLabel}>Années d&apos;expérience</span>
+          </div>
+          <div className={styles.statItem}>
+            <span className={styles.statNumber}>50+</span>
+            <span className={styles.statLabel}>Projets réalisés</span>
+          </div>
+          <div className={styles.statItem}>
+            <span className={styles.statNumber}>100%</span>
+            <span className={styles.statLabel}>Clients satisfaits</span>
+          </div>
+          <div className={styles.statItem}>
+            <span className={styles.statNumber}>9</span>
+            <span className={styles.statLabel}>Corps de métier</span>
           </div>
         </div>
+      </section>
 
-        {/* Finition & Confort */}
-        <div className={styles.serviceCategory}>
-          <h3 className={styles.categoryTitle}>Finition & Confort</h3>
-          <div className={styles.servicesGrid}>
-            <div className={styles.serviceCard}>
-              <img
-                src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=600&q=80"
-                alt="Plâtrerie"
-              />
-              <div className={styles.serviceCardContent}>
-                <h4>Plâtrerie</h4>
-                <p>
-                  Cloisons, faux plafonds, enduits, création d&apos;espaces
-                  fonctionnels et esthétiques.
-                </p>
-              </div>
-            </div>
-            <div className={styles.serviceCard}>
-              <img
-                src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80"
-                alt="Peinture"
-              />
-              <div className={styles.serviceCardContent}>
-                <h4>Peinture</h4>
-                <p>
-                  Peinture intérieure et extérieure, finitions soignées,
-                  harmonie des couleurs, protections adaptées.
-                </p>
-              </div>
-            </div>
-            <div className={styles.serviceCard}>
-              <img
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80"
-                alt="Isolation"
-              />
-              <div className={styles.serviceCardContent}>
-                <h4>Isolation</h4>
-                <p>
-                  Isolation thermique et acoustique des murs, combles, sols.
-                  Améliorez votre confort et réduisez vos dépenses
-                  d&apos;énergie.
-                </p>
-              </div>
-            </div>
+      {/* NOTRE MÉTHODE */}
+      <section className={styles.methodSection}>
+        <div className={styles.sectionHeader}>
+          <span className={styles.sectionTag}>Comment nous travaillons</span>
+          <h2>Notre Méthode</h2>
+          <div className={styles.sectionDivider}></div>
+          <p>Un accompagnement de A à Z</p>
+        </div>
+        <div className={styles.methodGrid}>
+          <div className={styles.methodStep}>
+            <span className={styles.methodNumber}>01</span>
+            <h4>Écoute & Conseil</h4>
+            <p>
+              Nous étudions votre projet et vous conseillons sur les meilleures
+              solutions.
+            </p>
+          </div>
+          <div className={styles.methodStep}>
+            <span className={styles.methodNumber}>02</span>
+            <h4>Devis Détaillé</h4>
+            <p>Un devis clair et transparent, sans surprise.</p>
+          </div>
+          <div className={styles.methodStep}>
+            <span className={styles.methodNumber}>03</span>
+            <h4>Réalisation</h4>
+            <p>Nos équipes qualifiées réalisent vos travaux avec rigueur.</p>
+          </div>
+          <div className={styles.methodStep}>
+            <span className={styles.methodNumber}>04</span>
+            <h4>Livraison</h4>
+            <p>Réception des travaux et satisfaction garantie.</p>
           </div>
         </div>
       </section>
@@ -206,7 +159,11 @@ export default function Home() {
       {/* RÉALISATIONS */}
       <section className={styles.realisationsSection}>
         <div className={styles.sectionHeader}>
+          <span className={styles.sectionTagLight}>
+            La preuve par l&apos;image
+          </span>
           <h2>Nos Réalisations</h2>
+          <div className={styles.sectionDividerLight}></div>
           <p>Découvrez en images la qualité de nos travaux</p>
         </div>
         <div className={styles.realisationsGrid}>
@@ -252,7 +209,9 @@ export default function Home() {
       <section className={styles.zoneSection}>
         <div className={styles.zoneContent}>
           <div className={styles.zoneText}>
+            <span className={styles.sectionTag}>Où nous trouver</span>
             <h2>Zone d&apos;intervention</h2>
+            <div className={styles.sectionDividerLeft}></div>
             <p>
               Nous intervenons principalement en <strong>Île-de-France</strong>{" "}
               (Val-d&apos;Oise, Yvelines, Oise) mais restons ouverts à des
@@ -277,6 +236,7 @@ export default function Home() {
       {/* CTA FINAL */}
       <section className={styles.ctaSection}>
         <div className={styles.ctaContent}>
+          <span className={styles.ctaTagline}>Prêt à démarrer ?</span>
           <h2>Créez votre maison de rêve</h2>
           <p>
             Confiez-nous votre projet, nous le réalisons avec passion et

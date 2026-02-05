@@ -1,74 +1,84 @@
 import styles from "./style.module.scss";
 import Link from "next/link";
 
-
 function Footer() {
   return (
-    <div className={styles["footer-container"]}>
-      <div className={styles["section-1"]}>
-        <img
-          src="/assets/ravina-logo.png"
-          alt="Logo Ravina"
-         
-        />
-        <p className={styles.slogan}>
-  Ethical Sourcing of Premium Botanicals from Madagascar.
-</p>
+    <footer className={styles.footer}>
+      <div className={styles.footerContent}>
+        {/* Section Logo & Description */}
+        <div className={styles.footerBrand}>
+          <h3 className={styles.logo}>GAMAT</h3>
+          <p className={styles.slogan}>
+            Entreprise familiale de bâtiment, tout corps d&apos;état.
+          </p>
+          <p className={styles.tagline}>Proximité • Sérieux • Qualité</p>
+        </div>
 
+        {/* Navigation */}
+        <div className={styles.footerNav}>
+          <h4>Navigation</h4>
+          <ul>
+            <li>
+              <Link href="/">Accueil</Link>
+            </li>
+            <li>
+              <Link href="/gamat-construction-et-renovation">
+                Nos Prestations
+              </Link>
+            </li>
+            <li>
+              <Link href="/les-realisations-gamat">Nos Réalisations</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Services */}
+        <div className={styles.footerServices}>
+          <h4>Nos Métiers</h4>
+          <ul>
+            <li>Maçonnerie</li>
+            <li>Couverture & Charpente</li>
+            <li>Plomberie & Électricité</li>
+            <li>Peinture & Isolation</li>
+          </ul>
+        </div>
+
+        {/* Contact */}
+        <div className={styles.footerContact}>
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <i className="fa-solid fa-phone"></i>
+              <a href="tel:+33XXXXXXXXX">XX XX XX XX XX</a>
+            </li>
+            <li>
+              <i className="fa-solid fa-envelope"></i>
+              <a href="mailto:contact@gamat.fr">contact@gamat.fr</a>
+            </li>
+            <li>
+              <i className="fa-solid fa-location-dot"></i>
+              Île-de-France (95, 78, 60)
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div className={styles["section-2"]}>
-        <h4>Sitemap </h4>
-        <ul>
-          <Link href="/">
-            <li>Home</li>
-          </Link>
-          <Link href="/centella-asiatica">
-            <li>Centella Asiatica</li>
-          </Link>
-          <Link href="/our-products">
-            <li>Our Products</li>
-          </Link>
-          <Link href="/about">
-            <li>About us</li>
-          </Link>
-          <Link href="/sustainability">
-            <li>Sustainability</li>
-          </Link>
-          <Link href="/contact">
-            <li>Contact</li>
-          </Link>
-        </ul>
+      {/* Bottom Bar */}
+      <div className={styles.footerBottom}>
+        <p>© 2026 GAMAT — Tous droits réservés</p>
+        <div className={styles.socialLinks}>
+          <a href="#" aria-label="Facebook">
+            <i className="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <i className="fab fa-instagram"></i>
+          </a>
+        </div>
       </div>
-
-      <div className={styles["section-3"]}>
-        <h4>Contact</h4>
-        <ul>
-          <li>
-            <i className="fa-solid fa-envelope"></i>
-            <Link href="contact@ravina.com">contact@ravina.com</Link>
-          </li>
-          <li>
-            <i className="fa-solid fa-phone"></i>(+261) XX XX XX XX
-          </li>
-          <li>
-            <i className="fa-solid fa-location-dot"></i> Talatamaty, Antananarivo, Madagascar
-          </li>
-          
-        
-        </ul>
-      </div>
-      <div className={styles["section-4"]}>
-  <h4>Certifications</h4>
-  <ul>
-    <li>UEBT Member</li>
-    <li>Ecocert Organic Certified</li>
-    <li>Traceability Verified by FarmForce</li>
-     <p className={styles.copyright}>© 2025 Ravina Medicinals | All rights reserved</p>
-  </ul>
-</div>
-
-    </div>
+    </footer>
   );
 }
 

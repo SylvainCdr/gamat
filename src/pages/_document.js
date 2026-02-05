@@ -47,6 +47,13 @@ export default function Document() {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         />
+     
+
+<link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
+<link href="https://fonts.cdnfonts.com/css/droid-serif" rel="stylesheet" />
+
+
+        {/* Google Tag Manager */}
       </Head>
       <body>
         {/* Google Tag Manager (noscript) */}

@@ -1,3 +1,3 @@
-import CentallaAsiatica from "@/templates/CentellaAsiatica/CentellaAsiatica";
+import NosRealisations from "@/templates/NosRealisations/NosRealisations";
 
-export default CentallaAsiatica;
+export default NosRealisations;

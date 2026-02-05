@@ -1,0 +1,378 @@
+.realisationsContainer {
+  background-color: #f8f9fa;
+  color: var(--col2);
+  font-family: "Poppins", sans-serif;
+}
+
+/* ============ HERO ============ */
+.heroSection {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(48, 56, 67, 0.85) 0%,
+    rgba(48, 56, 67, 0.6) 100%
+  );
+  z-index: 1;
+}
+
+.heroImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.heroSubtitle {
+  display: inline-block;
+  background: var(--col3);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.heroContent h1 {
+  font-family: "Droid Serif", serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 300;
+}
+
+/* ============ INTRO ============ */
+.introSection {
+  padding: 4rem 2rem;
+  background: #fff;
+}
+
+.introContent {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.introContent h2 {
+  font-family: "Droid Serif", serif;
+  font-size: 2rem;
+  color: var(--col2);
+  margin-bottom: 1.5rem;
+}
+
+.introContent p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+/* ============ FILTERS ============ */
+.filterSection {
+  padding: 2rem;
+  background: #fff;
+}
+
+.filterButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.filterBtn {
+  padding: 0.8rem 1.5rem;
+  background: transparent;
+  border: 2px solid var(--col2);
+  color: var(--col2);
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filterBtn:hover,
+.filterBtn.active {
+  background: var(--col2);
+  color: #fff;
+}
+
+/* ============ GALLERY ============ */
+.gallerySection {
+  padding: 3rem 2rem 5rem;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.realisationCard {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+}
+
+.realisationCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.cardImageWrapper {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.cardImageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.realisationCard:hover .cardImageWrapper img {
+  transform: scale(1.1);
+}
+
+.cardSurface {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--col3);
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.cardContent {
+  padding: 1.5rem;
+}
+
+.cardLocation {
+  display: inline-block;
+  color: var(--col3);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.cardContent h3 {
+  font-family: "Droid Serif", serif;
+  font-size: 1.2rem;
+  color: var(--col2);
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+}
+
+.cardContent p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* ============ STATS ============ */
+.statsSection {
+  padding: 4rem 2rem;
+  background: var(--col2);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.statItem {
+  padding: 1.5rem;
+}
+
+.statNumber {
+  display: block;
+  font-family: "Droid Serif", serif;
+  font-size: 2.5rem;
+  color: var(--col3);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.statLabel {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+}
+
+/* ============ TESTIMONIALS ============ */
+.testimonialsSection {
+  padding: 5rem 2rem;
+  background: #fff;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionHeader h2 {
+  font-family: "Droid Serif", serif;
+  font-size: 2rem;
+  color: var(--col2);
+  margin-bottom: 0.5rem;
+}
+
+.sectionHeader p {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 300;
+}
+
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonialCard {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.testimonialStars {
+  color: var(--col3);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 3px;
+}
+
+.testimonialCard p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+.testimonialAuthor {
+  font-size: 0.9rem;
+  color: var(--col2);
+  font-weight: 600;
+}
+
+/* ============ CTA ============ */
+.ctaSection {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, var(--col3) 0%, #c94d0d 100%);
+  text-align: center;
+}
+
+.ctaContent {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.ctaContent h2 {
+  font-family: "Droid Serif", serif;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.ctaContent p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.ctaContent button {
+  padding: 1rem 3rem;
+  background: #fff;
+  color: var(--col3);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ctaContent button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+  .heroSection {
+    height: 50vh;
+  }
+
+  .galleryGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonialsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .filterButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filterBtn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
