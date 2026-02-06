@@ -180,8 +180,11 @@ export default function Menu() {
             onClick={toggleMenu}
             id="menu-toggle"
           >
+            {/* Mobile/tablette: burger, Desktop: texte MENU */}
             <span className={styles.toggleLineTop}></span>
+            <span className={styles.toggleLineMiddle}></span>
             <span className={styles.toggleLineBottom}></span>
+            <span className={styles.menuToggleText}>MENU</span>
           </div>
 
           {/* CTA Button */}

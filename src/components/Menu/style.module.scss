@@ -44,24 +44,79 @@
 }
 
 /* ============ MENU TOGGLE ============ */
+// ...existing code...
 .menuToggle {
-  width: 44px;
-  height: 44px;
-  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 7px;
-  align-items: center;
   justify-content: center;
-  background: var(--col2);
-  border-radius: 10px;
+  align-items: center;
+  width: 48px;
+  height: 48px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  position: relative;
 }
 
-.menuToggle:hover {
-  background: var(--col3);
-  border: 1px solid var(--col3);
+.toggleLineTop,
+.toggleLineMiddle,
+.toggleLineBottom {
+  width: 32px;
+  height: 4px;
+  background: var(--col2);
+  border-radius: 2px;
+  margin: 4px 0;
+  transition: all 0.3s;
+}
+.toggleLineTop {
+  margin-top: 8px;
+}
+.toggleLineBottom {
+  margin-bottom: 8px;
+}
+.toggleLineMiddle {
+  margin: 0;
+}
+
+.menuToggleText {
+  display: none;
+
+  font-weight: 600;
+  color: var(--col2);
+  margin-top: 6px;
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+
+@media (min-width: 900px) {
+  .menuToggle {
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+  .toggleLineTop,
+  .toggleLineMiddle,
+  .toggleLineBottom {
+    display: none !important;
+  }
+  .menuToggleText {
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 0;
+    font-size: 3.5rem;
+    color: var(--col2);
+    font-weight: 900;
+    letter-spacing: 4px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    text-transform: uppercase;
+    line-height: 1;
+  }
 }
 
 .toggleLineTop,
@@ -218,6 +273,24 @@
   text-align: center;
   position: relative;
 }
+
+.menuToggleText {
+  font-size: 1.8rem;
+  color: var(--col1);
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom : 2px solid var(--col3);
+  border-top : 2px solid var(--col3);
+  padding: 0.1rem 0;
+  transition : all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+
+
+&:hover {
+  scale : 1.05;
+  transform: translateY(-2px);
+}}
 
 /* Close Button */
 .closeButton {

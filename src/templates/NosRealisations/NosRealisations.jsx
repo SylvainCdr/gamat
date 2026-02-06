@@ -1,92 +1,74 @@
 import styles from "./style.module.scss";
 import { useRouter } from "next/router";
 import Head from "next/head";
-import { useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function NosRealisations() {
   const router = useRouter();
-  const [activeFilter, setActiveFilter] = useState("all");
-
+  // 3 réalisations réelles
   const realisations = [
     {
       id: 1,
       title: "Création d'une salle de séjour et d'une cuisine 45m²",
-      location: "Butry-sur-Oise (95)",
-      category: "renovation",
-      description:
-        "Rénovation complète avec ouverture des espaces, création d'une cuisine ouverte moderne et aménagement du séjour. Travaux de maçonnerie, plâtrerie, électricité et peinture.",
-      image:
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+      location: "BUTRY-SUR-OISE - 95",
       surface: "45 m²",
+      description:
+        "Rénovation complète avec ouverture des espaces, création d'une cuisine ouverte moderne et aménagement du séjour.",
+      images: [
+        "/assets/img/rea1/845330_1651034805c74c38b28b80fe15f22a4e~mv2.png",
+        "/assets/img/rea1/845330_472e135210664d3a94adc1a4e54b30ba~mv2.png",
+        "/assets/img/rea1/845330_51130044ac064203878bea4724933077~mv2.png",
+        "/assets/img/rea1/845330_73c117a05d2a4386a81157fabfc3087d~mv2.png",
+        "/assets/img/rea1/845330_829c7e456a17462fbe62551fbb7fc7ab~mv2.png",
+        "/assets/img/rea1/845330_fe2bf14063cd46a1abcdca359f32f2a6~mv2.png",
+      ],
     },
     {
       id: 2,
       title: "Rénovation totale de la couverture",
-      location: "Fleury (60)",
-      category: "toiture",
+      location: "FLEURY - 60",
+      surface: "~600 m²",
       description:
         "Réfection complète de la toiture avec remplacement des tuiles, traitement de la charpente, isolation des combles et zinguerie.",
-      image:
-        "https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=800&q=80",
-      surface: "~600 m²",
+      images: [
+        "/assets/img/rea2/845330_34b915102ab0480487f1db6e08361066~mv2.png",
+        "/assets/img/rea2/845330_72079a7d5d0e49b487ca1ccc422f0f92~mv2.jpg",
+        "/assets/img/rea2/845330_8d09d4e0183b4cdbb108655e165cb198~mv2.png",
+        "/assets/img/rea2/845330_a56f74a1947a4960bb65da479b07097b~mv2.png",
+        "/assets/img/rea2/845330_df3f3f026d664c9bafe815128fdbca9e~mv2.jpg",
+      ],
     },
     {
       id: 3,
       title: "Rénovation totale de 2 salles de bain",
-      location: "Taverny (95)",
-      category: "salle-de-bain",
+      location: "TAVERNY - 95",
+      surface: "2 pièces",
       description:
         "Démolition, plomberie, carrelage, installation des équipements sanitaires et finitions. Création d'espaces modernes et fonctionnels.",
-      image:
-        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80",
-      surface: "2 pièces",
-    },
-    {
-      id: 4,
-      title: "Extension maison individuelle",
-      location: "L'Isle-Adam (95)",
-      category: "renovation",
-      description:
-        "Construction d'une extension de 30m² avec dalle, maçonnerie, toiture et finitions complètes.",
-      image:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-      surface: "30 m²",
-    },
-    {
-      id: 5,
-      title: "Réfection toiture ardoise",
-      location: "Méry-sur-Oise (95)",
-      category: "toiture",
-      description:
-        "Remplacement complet de la couverture en ardoise, révision charpente et isolation.",
-      image:
-        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80",
-      surface: "120 m²",
-    },
-    {
-      id: 6,
-      title: "Création salle de bain PMR",
-      location: "Auvers-sur-Oise (95)",
-      category: "salle-de-bain",
-      description:
-        "Aménagement d'une salle de bain accessible aux personnes à mobilité réduite avec douche à l'italienne.",
-      image:
-        "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80",
-      surface: "8 m²",
+      images: [
+        "/assets/img/rea3/845330_414aa4ac75b3463c8c81f841ed067d14~mv2.png",
+        "/assets/img/rea3/845330_6e094577b0a94eef8a953e0d31b404f8~mv2.png",
+        "/assets/img/rea3/845330_7e1af5eeaf5343c8bef6d2f7a1461642~mv2.png",
+        "/assets/img/rea3/845330_909b2e1be0824e468e49917891ec77a9~mv2.png",
+      ],
     },
   ];
 
-  const filters = [
-    { key: "all", label: "Tous les projets" },
-    { key: "renovation", label: "Rénovation" },
-    { key: "toiture", label: "Toiture" },
-    { key: "salle-de-bain", label: "Salle de bain" },
-  ];
-
-  const filteredRealisations =
-    activeFilter === "all"
-      ? realisations
-      : realisations.filter((r) => r.category === activeFilter);
+  // Slider settings for react-slick
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 700,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3500,
+    arrows: true,
+    pauseOnHover: true,
+    adaptiveHeight: true,
+  };
 
   return (
     <>
@@ -135,37 +117,31 @@ export default function NosRealisations() {
           </div>
         </section>
 
-        {/* FILTERS */}
-        <section className={styles.filterSection}>
-          <div className={styles.filterButtons}>
-            {filters.map((filter) => (
-              <button
-                key={filter.key}
-                className={`${styles.filterBtn} ${activeFilter === filter.key ? styles.active : ""}`}
-                onClick={() => setActiveFilter(filter.key)}
-              >
-                {filter.label}
-              </button>
-            ))}
-          </div>
-        </section>
-
-        {/* GALLERY */}
+        {/* REALISATIONS SLIDERS */}
         <section className={styles.gallerySection}>
           <div className={styles.galleryGrid}>
-            {filteredRealisations.map((realisation) => (
+            {realisations.map((realisation) => (
               <div key={realisation.id} className={styles.realisationCard}>
-                <div className={styles.cardImageWrapper}>
-                  <img src={realisation.image} alt={realisation.title} />
-                  <span className={styles.cardSurface}>
-                    {realisation.surface}
-                  </span>
+                <div className={styles.cardSliderWrapper}>
+                  <Slider {...sliderSettings}>
+                    {realisation.images.map((img, i) => (
+                      <img
+                        key={i}
+                        src={img}
+                        alt={realisation.title + " image " + (i + 1)}
+                        className={styles.sliderImage}
+                      />
+                    ))}
+                  </Slider>
                 </div>
                 <div className={styles.cardContent}>
                   <span className={styles.cardLocation}>
                     {realisation.location}
                   </span>
                   <h3>{realisation.title}</h3>
+                  <span className={styles.cardSurface}>
+                    {realisation.surface}
+                  </span>
                   <p>{realisation.description}</p>
                 </div>
               </div>
