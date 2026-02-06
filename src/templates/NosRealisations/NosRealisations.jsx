@@ -17,12 +17,12 @@ export default function NosRealisations() {
       description:
         "Rénovation complète avec ouverture des espaces, création d'une cuisine ouverte moderne et aménagement du séjour.",
       images: [
-        "/assets/img/rea1/845330_1651034805c74c38b28b80fe15f22a4e~mv2.png",
-        "/assets/img/rea1/845330_472e135210664d3a94adc1a4e54b30ba~mv2.png",
-        "/assets/img/rea1/845330_51130044ac064203878bea4724933077~mv2.png",
-        "/assets/img/rea1/845330_73c117a05d2a4386a81157fabfc3087d~mv2.png",
-        "/assets/img/rea1/845330_829c7e456a17462fbe62551fbb7fc7ab~mv2.png",
-        "/assets/img/rea1/845330_fe2bf14063cd46a1abcdca359f32f2a6~mv2.png",
+        "/assets/img/rea1/1.png",
+        "/assets/img/rea1/2.png",
+        "/assets/img/rea1/3.png",
+        "/assets/img/rea1/4.png",
+        "/assets/img/rea1/5.png",
+        "/assets/img/rea1/6.png",
       ],
     },
     {
@@ -33,11 +33,11 @@ export default function NosRealisations() {
       description:
         "Réfection complète de la toiture avec remplacement des tuiles, traitement de la charpente, isolation des combles et zinguerie.",
       images: [
-        "/assets/img/rea2/845330_34b915102ab0480487f1db6e08361066~mv2.png",
-        "/assets/img/rea2/845330_72079a7d5d0e49b487ca1ccc422f0f92~mv2.jpg",
-        "/assets/img/rea2/845330_8d09d4e0183b4cdbb108655e165cb198~mv2.png",
-        "/assets/img/rea2/845330_a56f74a1947a4960bb65da479b07097b~mv2.png",
-        "/assets/img/rea2/845330_df3f3f026d664c9bafe815128fdbca9e~mv2.jpg",
+        "/assets/img/rea2/1.png",
+        "/assets/img/rea2/2.jpg",
+        "/assets/img/rea2/3.png",
+        "/assets/img/rea2/4.png",
+        "/assets/img/rea2/5.jpg",
       ],
     },
     {
@@ -48,10 +48,10 @@ export default function NosRealisations() {
       description:
         "Démolition, plomberie, carrelage, installation des équipements sanitaires et finitions. Création d'espaces modernes et fonctionnels.",
       images: [
-        "/assets/img/rea3/845330_414aa4ac75b3463c8c81f841ed067d14~mv2.png",
-        "/assets/img/rea3/845330_6e094577b0a94eef8a953e0d31b404f8~mv2.png",
-        "/assets/img/rea3/845330_7e1af5eeaf5343c8bef6d2f7a1461642~mv2.png",
-        "/assets/img/rea3/845330_909b2e1be0824e468e49917891ec77a9~mv2.png",
+        "/assets/img/rea3/1.png",
+        "/assets/img/rea3/2.png",
+        "/assets/img/rea3/3.png",
+        "/assets/img/rea3/4.png",
       ],
     },
   ];

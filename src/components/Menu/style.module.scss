@@ -280,17 +280,17 @@
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
-  border-bottom : 2px solid var(--col3);
-  border-top : 2px solid var(--col3);
+  border-bottom: 2px solid var(--col3);
+  border-top: 2px solid var(--col3);
   padding: 0.1rem 0;
-  transition : all 0.3s ease;
-  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease;
+  font-family: "Montserrat", sans-serif;
 
-
-&:hover {
-  scale : 1.05;
-  transform: translateY(-2px);
-}}
+  &:hover {
+    scale: 1.05;
+    transform: translateY(-2px);
+  }
+}
 
 /* Close Button */
 .closeButton {

@@ -169,7 +169,7 @@ export default function Home() {
         <div className={styles.realisationsGrid}>
           <div className={styles.realisationCard}>
             <img
-              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+              src="/assets/img/rea1/2.png"
               alt="Réalisation Butry-sur-Oise"
             />
             <div className={styles.realisationInfo}>
@@ -179,7 +179,7 @@ export default function Home() {
           </div>
           <div className={styles.realisationCard}>
             <img
-              src="https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=800&q=80"
+              src="/assets/img/rea2/4.png"
               alt="Réalisation Fleury"
             />
             <div className={styles.realisationInfo}>
@@ -189,7 +189,7 @@ export default function Home() {
           </div>
           <div className={styles.realisationCard}>
             <img
-              src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80"
+              src="/assets/img/rea3/2.png"
               alt="Réalisation Taverny"
             />
             <div className={styles.realisationInfo}>
