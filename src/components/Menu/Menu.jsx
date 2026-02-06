@@ -133,28 +133,6 @@ export default function Menu() {
                 ))}
               </ul>
             </div>
-
-            {/* Social Links
-            <div className={styles.menuSocials}>
-              <p>Follow RAVINA Medicinals</p>
-              <ul>
-                <li>
-                  <a href="#" target="_blank">
-                    LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="_blank">
-                    Instagram
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="_blank">
-                    Facebook
-                  </a>
-                </li>
-              </ul>
-            </div> */}
           </div>
         </div>
       </div>
@@ -167,8 +145,8 @@ export default function Menu() {
             <Link href="/">
               <Image
                 src="/assets/logos/22.png"
-                alt="RAVINA Medicinals - Premium Centella Asiatica from Madagascar"
-                width={150}
+                alt="GAMAT Logo"
+                width={160}
                 height={40}
               />
             </Link>
