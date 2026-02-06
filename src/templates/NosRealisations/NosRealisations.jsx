@@ -78,8 +78,26 @@ export default function NosRealisations() {
         </title>
         <meta
           name="description"
-          content="Découvrez les réalisations GAMAT en Île-de-France : rénovations, toitures, salles de bain. Projets à Butry-sur-Oise, Fleury, Taverny et environs."
+          content="Découvrez nos réalisations en construction et rénovation tout corps d'état en Île-de-France (95, 78, 60). Projets de qualité, du gros œuvre aux finitions. Demandez votre devis gratuit !"
         />
+        <meta
+          name="keywords"
+          content="GAMAT, réalisations, projets, construction, rénovation, bâtiment, maçonnerie, couverture, charpente, menuiserie, plomberie, électricité, plâtrerie, peinture, isolation, Île-de-France, Val-d'Oise, Yvelines, Oise"
+        />
+        <meta name="author" content="GAMAT" />
+        <meta name="robots" content="index, follow" />
+        <meta
+          property="og:title"
+          content="Nos Réalisations | GAMAT - Construction & Rénovation en Île-de-France"
+        />
+        <meta
+          property="og:description"
+          content="Découvrez nos réalisations en construction et rénovation tout corps d'état en Île-de-France (95, 78, 60). Projets de qualité, du gros œuvre aux finitions. Demandez votre devis gratuit !"
+        />
+        <meta property="og:type" content="website" />
+         <meta property="og:image" content="/assets/logos/2.png" />
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:site_name" content="GAMAT" />
       </Head>
 
       <div className={styles.realisationsContainer}>

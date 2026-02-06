@@ -6,25 +6,32 @@ export default function Document() {
     <Html lang="fr">
       <Head>
         {/* Meta Tags for SEO */}
-
-        <meta name="description" content="Ravina" />
+        <meta
+          name="description"
+          content="GAMAT - Entreprise familiale de construction et rénovation tout corps d'état en Île-de-France (95, 78, 60). Qualité, proximité, respect des délais. Demandez votre devis gratuit !"
+        />
         <meta
           name="keywords"
-          content="Ravinea, centella asiatica, herbal supplier, madagascar"
+          content="GAMAT, construction, rénovation, bâtiment, maçonnerie, couverture, charpente, menuiserie, plomberie, électricité, plâtrerie, peinture, isolation, Île-de-France, Val-d'Oise, Yvelines, Oise, entreprise familiale, devis gratuit"
         />
-        <meta name="author" content="Ravina" />
+        <meta name="author" content="GAMAT" />
         <meta name="robots" content="index, follow" />
 
-        <meta property="og:title" content="Ravina - Centella Asiatica" />
-        <meta property="og:description" content="Ravina - Centella Asiatica" />
-        {/* <meta property="og:url" content="https://www.diviniti.tech" /> */}
+        <meta
+          property="og:title"
+          content="GAMAT - Construction & Rénovation en Île-de-France"
+        />
+        <meta
+          property="og:description"
+          content="Entreprise familiale spécialisée dans le bâtiment tout corps d'état : construction, rénovation, aménagement. Découvrez nos réalisations et demandez un devis gratuit !"
+        />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content="/assets/logos/2.png" />
         <meta property="og:locale" content="fr_FR" />
-        <meta property="og:site_name" content="Ravina" />
+        <meta property="og:site_name" content="GAMAT" />
 
         {/* Favicon */}
-        <link rel="icon" href="" />
+        <link rel="icon" href="/assets/logos/favicon.ico" />
 
         {/*  External Stylesheets */}
 

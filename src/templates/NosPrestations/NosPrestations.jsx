@@ -89,13 +89,30 @@ export default function NosPrestations() {
   return (
     <>
       <Head>
-        <title>
-          Nos Prestations | GAMAT - Construction & Rénovation en Île-de-France
-        </title>
+        <title>Nos Prestations - GAMAT</title>
         <meta
           name="description"
-          content="Découvrez les prestations GAMAT : maçonnerie, couverture, charpente, menuiserie, plomberie, électricité, plâtrerie, peinture et isolation. Entreprise familiale en Île-de-France."
+          content="GAMAT - Entreprise familiale de construction et rénovation tout corps d'état en Île-de-France (95, 78, 60). Qualité, proximité, respect des délais. Demandez votre devis gratuit !"
         />
+        <meta
+          name="keywords"
+          content="GAMAT, construction, rénovation, bâtiment, maçonnerie, couverture, charpente, menuiserie, plomberie, électricité, plâtrerie, peinture, isolation, Île-de-France, Val-d'Oise, Yvelines, Oise, entreprise familiale, devis gratuit"
+        />
+        <meta name="author" content="GAMAT" />
+        <meta name="robots" content="index, follow" />
+
+        <meta
+          property="og:title"
+          content="GAMAT - Construction & Rénovation en Île-de-France"
+        />
+        <meta
+          property="og:description"
+          content="Entreprise familiale spécialisée dans le bâtiment tout corps d'état : construction, rénovation, aménagement. Découvrez nos réalisations et demandez un devis gratuit !"
+        />
+        <meta property="og:type" content="website" />
+            <meta property="og:image" content="/assets/logos/2.png" />
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:site_name" content="GAMAT" />
       </Head>
 
       <div className={styles.prestationsContainer}>

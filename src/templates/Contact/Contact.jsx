@@ -33,8 +33,27 @@ export default function Contact() {
         </title>
         <meta
           name="description"
-          content="Contactez GAMAT pour un devis gratuit. Entreprise de construction et rénovation en Île-de-France (95, 78, 60). Réponse rapide garantie."
+          content="Contactez GAMAT pour discuter de votre projet de construction ou rénovation en Île-de-France. Obtenez un devis gratuit et personnalisé rapidement."
         />
+        <meta
+          name="keywords"
+          content="contact gamat, devis construction, devis rénovation, entreprise bâtiment, Île-de-France, Val-d'Oise, Yvelines, Oise"
+        />
+
+        <meta name="author" content="GAMAT" />
+        <meta name="robots" content="index, follow" />
+        <meta
+          property="og:title"
+          content="Contact & Devis | GAMAT - Construction & Rénovation en Île-de-France"
+        />
+        <meta
+          property="og:description"
+          content="Contactez GAMAT pour discuter de votre projet de construction ou rénovation en Île-de-France. Obtenez un devis gratuit et personnalisé rapidement."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/assets/logos/2.png" />
+        <meta property="og:locale" content="fr_FR" />
+        <meta property="og:site_name" content="GAMAT" />
       </Head>
 
       <div className={styles.contactContainer}>
