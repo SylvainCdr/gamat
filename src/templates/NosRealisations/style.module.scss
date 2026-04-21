@@ -263,7 +263,7 @@
 /* ============ TESTIMONIALS ============ */
 .testimonialsSection {
   padding: 5rem 2rem;
-  background: #fff;
+  background: linear-gradient(160deg, #f0f2f5 0%, #e8eaed 100%);
 }
 
 .sectionHeader {
@@ -292,32 +292,114 @@
 }
 
 .testimonialCard {
-  background: #f8f9fa;
+  background: #fff;
   padding: 2rem;
   border-radius: 16px;
-  text-align: center;
+  border-left: 4px solid var(--col3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.testimonialCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12);
+}
+
+.quoteIcon {
+  font-size: 5rem;
+  line-height: 0.8;
+  color: var(--col3);
+  opacity: 0.15;
+  font-family: Georgia, serif;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.25rem;
 }
 
 .testimonialStars {
-  color: var(--col3);
-  font-size: 1.2rem;
+  color: #f59e0b;
+  font-size: 1.1rem;
   margin-bottom: 1rem;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 .testimonialCard p {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #555;
-  line-height: 1.7;
+  line-height: 1.75;
   font-style: italic;
   margin-bottom: 1.5rem;
   font-weight: 300;
+  flex: 1;
+}
+
+.testimonialFooter {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f0f2f5;
+  margin-top: auto;
+}
+
+.testimonialAvatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--col2);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  letter-spacing: 0.5px;
+}
+
+.testimonialMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
 }
 
 .testimonialAuthor {
   font-size: 0.9rem;
   color: var(--col2);
   font-weight: 600;
+}
+
+.testimonialSource {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  color: #888;
+  font-weight: 400;
+}
+
+.googleG {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.gBlue {
+  color: #4285f4;
+}
+.gRed {
+  color: #ea4335;
+}
+.gYellow {
+  color: #fbbc05;
+}
+.gGreen {
+  color: #34a853;
 }
 
 /* ============ CTA ============ */

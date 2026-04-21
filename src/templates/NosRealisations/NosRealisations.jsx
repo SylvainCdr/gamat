@@ -208,35 +208,84 @@ export default function NosRealisations() {
           </div>
           <div className={styles.testimonialsGrid}>
             <div className={styles.testimonialCard}>
+              <span className={styles.quoteIcon}>&ldquo;</span>
               <div className={styles.testimonialStars}>★★★★★</div>
               <p>
-                &ldquo;Travail impeccable, équipe sérieuse et respectueuse des
-                délais. Je recommande vivement GAMAT pour tous vos
-                travaux.&rdquo;
+                Très bonne expérience avec des artisans très sérieux et pour une
+                fois très professionnel qui tiennent leurs paroles et
+                engagements !!!! Je recommande fortement !!!!
               </p>
-              <span className={styles.testimonialAuthor}>
-                — M. Dupont, Taverny
-              </span>
+              <div className={styles.testimonialFooter}>
+                <div className={styles.testimonialAvatar}>TM</div>
+                <div className={styles.testimonialMeta}>
+                  <span className={styles.testimonialAuthor}>Thibaud M.</span>
+                  <span className={styles.testimonialSource}>
+                    <span className={styles.googleG}>
+                      <span className={styles.gBlue}>G</span>
+                      <span className={styles.gRed}>o</span>
+                      <span className={styles.gYellow}>o</span>
+                      <span className={styles.gBlue}>g</span>
+                      <span className={styles.gGreen}>l</span>
+                      <span className={styles.gRed}>e</span>
+                    </span>
+                    Avis vérifié
+                  </span>
+                </div>
+              </div>
             </div>
             <div className={styles.testimonialCard}>
+              <span className={styles.quoteIcon}>&ldquo;</span>
               <div className={styles.testimonialStars}>★★★★★</div>
               <p>
-                &ldquo;Rénovation complète de notre toiture réalisée avec
-                professionnalisme. Le résultat est parfait.&rdquo;
+                Equipe très compétente et respectueuse. Du sérieux et de la
+                minutie. A l&apos;écoute des besoins du client. Rendez-vous
+                respecté pour l&apos;isolation de ma toiture. Très belle
+                réactivité sur les nombreux échanges.
               </p>
-              <span className={styles.testimonialAuthor}>
-                — Mme Martin, Fleury
-              </span>
+              <div className={styles.testimonialFooter}>
+                <div className={styles.testimonialAvatar}>CA</div>
+                <div className={styles.testimonialMeta}>
+                  <span className={styles.testimonialAuthor}>Cedric A.</span>
+                  <span className={styles.testimonialSource}>
+                    <span className={styles.googleG}>
+                      <span className={styles.gBlue}>G</span>
+                      <span className={styles.gRed}>o</span>
+                      <span className={styles.gYellow}>o</span>
+                      <span className={styles.gBlue}>g</span>
+                      <span className={styles.gGreen}>l</span>
+                      <span className={styles.gRed}>e</span>
+                    </span>
+                    Avis vérifié
+                  </span>
+                </div>
+              </div>
             </div>
             <div className={styles.testimonialCard}>
+              <span className={styles.quoteIcon}>&ldquo;</span>
               <div className={styles.testimonialStars}>★★★★★</div>
               <p>
-                &ldquo;Entreprise familiale à l&apos;écoute. Notre salle de bain
-                est magnifique, merci pour votre travail !&rdquo;
+                Merci à toute l&apos;équipe de GAMAT pour la rénovation de ma
+                toiture, super pro et ponctuel. À bientôt pour les travaux de
+                maçonnerie, changement de portail et rénovation de la façade.
+                Super boulot, bravo !
               </p>
-              <span className={styles.testimonialAuthor}>
-                — M. Bernard, Butry-sur-Oise
-              </span>
+              <div className={styles.testimonialFooter}>
+                <div className={styles.testimonialAvatar}>LV</div>
+                <div className={styles.testimonialMeta}>
+                  <span className={styles.testimonialAuthor}>Laurent V.</span>
+                  <span className={styles.testimonialSource}>
+                    <span className={styles.googleG}>
+                      <span className={styles.gBlue}>G</span>
+                      <span className={styles.gRed}>o</span>
+                      <span className={styles.gYellow}>o</span>
+                      <span className={styles.gBlue}>g</span>
+                      <span className={styles.gGreen}>l</span>
+                      <span className={styles.gRed}>e</span>
+                    </span>
+                    Avis vérifié
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
