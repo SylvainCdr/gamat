@@ -22,7 +22,7 @@ export default function NosRealisations() {
         "/assets/img/rea1/3.png",
         "/assets/img/rea1/4.png",
         "/assets/img/rea1/5.png",
-        "/assets/img/rea1/6.png",
+        // "/assets/img/rea1/6.png",
       ],
     },
     {
@@ -34,8 +34,8 @@ export default function NosRealisations() {
         "Réfection complète de la toiture avec remplacement des tuiles, traitement de la charpente, isolation des combles et zinguerie.",
       images: [
         "/assets/img/rea2/1.png",
-        "/assets/img/rea2/2.jpg",
-        "/assets/img/rea2/3.png",
+        "/assets/img/rea2/2.png",
+        "/assets/img/rea2/3.jpg",
         "/assets/img/rea2/4.png",
         "/assets/img/rea2/5.jpg",
       ],
@@ -50,11 +50,12 @@ export default function NosRealisations() {
       images: [
         "/assets/img/rea3/1.png",
         "/assets/img/rea3/2.png",
-        "/assets/img/rea3/3.png",
         "/assets/img/rea3/4.png",
+        "/assets/img/rea3/5.png",
       ],
     },
   ];
+
 
   // Slider settings for react-slick
   const sliderSettings = {

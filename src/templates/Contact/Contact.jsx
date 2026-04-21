@@ -1,8 +1,14 @@
 ﻿import Head from "next/head";
 import styles from "./style.module.scss";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+
+const SERVICE_ID = "gamatService_contactForm";
+const TEMPLATE_ID = "template_7bqt4mg";
+const PUBLIC_KEY = "u9GTyLQM5ngOtbMBB";
 
 export default function Contact() {
+  const formRef = useRef();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -11,6 +17,7 @@ export default function Contact() {
     location: "",
     message: "",
   });
+  const [status, setStatus] = useState(null); // null | "sending" | "success" | "error"
 
   const handleChange = (e) => {
     setFormData({
@@ -21,8 +28,24 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Ici on pourrait intégrer l'envoi du formulaire
-    alert("Merci pour votre message ! Nous vous recontacterons rapidement.");
+    setStatus("sending");
+
+    emailjs
+      .sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY)
+      .then(() => {
+        setStatus("success");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          projectType: "",
+          location: "",
+          message: "",
+        });
+      })
+      .catch(() => {
+        setStatus("error");
+      });
   };
 
   return (
@@ -83,7 +106,24 @@ export default function Contact() {
                 dans les plus brefs délais.
               </p>
 
-              <form className={styles.contactForm} onSubmit={handleSubmit}>
+              {status === "success" && (
+                <div className={styles.successMessage}>
+                  ✅ Votre message a bien été envoyé ! Nous vous recontacterons
+                  rapidement.
+                </div>
+              )}
+              {status === "error" && (
+                <div className={styles.errorMessage}>
+                  ❌ Une erreur est survenue. Veuillez réessayer ou nous
+                  contacter directement.
+                </div>
+              )}
+
+              <form
+                ref={formRef}
+                className={styles.contactForm}
+                onSubmit={handleSubmit}
+              >
                 <div className={styles.formRow}>
                   <div className={styles.formGroup}>
                     <label htmlFor="name">Nom complet *</label>
@@ -118,7 +158,7 @@ export default function Contact() {
                       type="tel"
                       id="phone"
                       name="phone"
-                      placeholder="06 00 00 00 00"
+                      placeholder="07 59 59 78 98"
                       value={formData.phone}
                       onChange={handleChange}
                       required
@@ -173,8 +213,14 @@ export default function Contact() {
                   />
                 </div>
 
-                <button type="submit" className={styles.submitBtn}>
-                  Envoyer ma demande
+                <button
+                  type="submit"
+                  className={styles.submitBtn}
+                  disabled={status === "sending"}
+                >
+                  {status === "sending"
+                    ? "Envoi en cours..."
+                    : "Envoyer ma demande"}
                 </button>
               </form>
             </div>
@@ -187,14 +233,14 @@ export default function Contact() {
                   <span className={styles.infoIcon}>📞</span>
                   <div>
                     <strong>Téléphone</strong>
-                    <a href="tel:+33600000000">06 00 00 00 00</a>
+                    <a href="tel:+33759597898">07 59 59 78 98</a>
                   </div>
                 </div>
                 <div className={styles.infoItem}>
                   <span className={styles.infoIcon}>✉️</span>
                   <div>
                     <strong>Email</strong>
-                    <a href="mailto:contact@gamat.fr">contact@gamat.fr</a>
+                    <a href="mailto:sasgamat@gmail.com">sasgamat@gmail.com</a>
                   </div>
                 </div>
                 <div className={styles.infoItem}>
@@ -229,7 +275,7 @@ export default function Contact() {
               <div className={styles.infoCard + " " + styles.ctaCard}>
                 <h3>Besoin d&apos;une réponse rapide ?</h3>
                 <p>Appelez-nous directement pour discuter de votre projet.</p>
-                <a href="tel:+33600000000" className={styles.callBtn}>
+                <a href="tel:+33759597898" className={styles.callBtn}>
                   📞 Appeler maintenant
                 </a>
               </div>

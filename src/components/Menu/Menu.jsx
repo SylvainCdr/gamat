@@ -67,10 +67,6 @@ export default function Menu() {
               hoveredMenuItem === null ? styles.active : ""
             }`}
           >
-            {/* <img
-              src="https://images.unsplash.com/photo-1558437753-21dc69d8ebed?q=80&w=2940&auto=format&fit=crop"
-              alt="RAVINA Madagascar"
-            /> */}
             <video autoPlay loop muted className={styles.videoBackground}>
               <source src="/assets/video/video2.mp4" type="video/mp4" />
               Your browser does not support the video tag.

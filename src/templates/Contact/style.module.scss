@@ -1,7 +1,6 @@
 .contactContainer {
   background-color: #f8f9fa;
   color: var(--col2);
-  
 }
 
 /* ============ HERO ============ */
@@ -168,10 +167,35 @@
   margin-top: 1rem;
 }
 
-.submitBtn:hover {
+.submitBtn:hover:not(:disabled) {
   background: #c94d0d;
   transform: translateY(-3px);
   box-shadow: 0 10px 30px rgba(231, 91, 15, 0.3);
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.successMessage {
+  padding: 1rem 1.25rem;
+  background: #d1fae5;
+  color: #065f46;
+  border: 1px solid #6ee7b7;
+  border-radius: 8px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.errorMessage {
+  padding: 1rem 1.25rem;
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+  border-radius: 8px;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 /* ============ INFO WRAPPER ============ */

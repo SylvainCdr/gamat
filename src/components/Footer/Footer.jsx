@@ -52,11 +52,11 @@ function Footer() {
           <ul>
             <li>
               <i className="fa-solid fa-phone"></i>
-              <a href="tel:+33XXXXXXXXX">XX XX XX XX XX</a>
+              <a href="tel:+33759597898">07 59 59 78 98</a>
             </li>
             <li>
               <i className="fa-solid fa-envelope"></i>
-              <a href="mailto:contact@gamat.fr">contact@gamat.fr</a>
+              <a href="mailto:sasgamat@gmail.com">sasgamat@gmail.com</a>
             </li>
             <li>
               <i className="fa-solid fa-location-dot"></i>
