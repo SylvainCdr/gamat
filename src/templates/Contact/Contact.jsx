@@ -111,19 +111,6 @@ export default function Contact() {
                 dans les plus brefs délais.
               </p>
 
-              {status === "success" && (
-                <div className={styles.successMessage}>
-                  ✅ Votre message a bien été envoyé ! Nous vous recontacterons
-                  rapidement.
-                </div>
-              )}
-              {status === "error" && (
-                <div className={styles.errorMessage}>
-                  ❌ Une erreur est survenue. Veuillez réessayer ou nous
-                  contacter directement.
-                </div>
-              )}
-
               <form
                 ref={formRef}
                 className={styles.contactForm}
@@ -217,6 +204,19 @@ export default function Contact() {
                     required
                   />
                 </div>
+
+                {status === "success" && (
+                  <div className={styles.successMessage}>
+                    ✅ Votre message a bien été envoyé ! Nous vous
+                    recontacterons rapidement.
+                  </div>
+                )}
+                {status === "error" && (
+                  <div className={styles.errorMessage}>
+                    ❌ Une erreur est survenue. Veuillez réessayer ou nous
+                    contacter directement.
+                  </div>
+                )}
 
                 <button
                   type="submit"
