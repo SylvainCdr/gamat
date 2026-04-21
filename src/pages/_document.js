@@ -56,11 +56,26 @@ export default function Document() {
           crossOrigin="anonymous"
         />
 
-        {/* Google Tag Manager */}
+        {/* Google Search Console */}
+        <meta name="google-site-verification" content="jZpo6N_pZlnzson2XHCOkAQAkMc2bAglG2w3H6XOVhY" />
+
+        {/* Google Analytics GA4 */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-SKNYZ9PD1R"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-SKNYZ9PD1R', { page_path: window.location.pathname });
+            `,
+          }}
+        />
       </Head>
       <body>
-        {/* Google Tag Manager (noscript) */}
-
         <Main />
         <NextScript />
       </body>

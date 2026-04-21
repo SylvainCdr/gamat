@@ -10,7 +10,11 @@ function App({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
-    const handleRouteChange = (url) => {};
+    const handleRouteChange = (url) => {
+      if (typeof window.gtag === "function") {
+        window.gtag("config", "G-SKNYZ9PD1R", { page_path: url });
+      }
+    };
     router.events.on("routeChangeComplete", handleRouteChange);
     return () => {
       router.events.off("routeChangeComplete", handleRouteChange);
