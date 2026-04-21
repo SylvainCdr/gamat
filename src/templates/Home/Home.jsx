@@ -7,28 +7,36 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>GAMAT - Construction & Rénovation en Île-de-France</title>
+        <title>
+          Entreprise BTP Île-de-France | Devis Gratuit - GAMAT Construction
+          Rénovation
+        </title>
         <meta
           name="description"
-          content="GAMAT - Entreprise familiale de construction et rénovation tout corps d'état en Île-de-France (95, 78, 60). Qualité, proximité, respect des délais. Demandez votre devis gratuit !"
+          content="Artisan BTP familial en Île-de-France (Val-d'Oise 95, Yvelines 78, Oise 60). Maçonnerie, toiture, rénovation complète, isolation. Devis gratuit sous 48h. ☎ 07 59 59 78 98"
         />
         <meta
           name="keywords"
-          content="GAMAT, construction, rénovation, bâtiment, maçonnerie, couverture, charpente, menuiserie, plomberie, électricité, plâtrerie, peinture, isolation, Île-de-France, Val-d'Oise, Yvelines, Oise, entreprise familiale, devis gratuit"
+          content="entreprise BTP Île-de-France, maçonnerie 95, rénovation Val-d'Oise, toiture Yvelines, construction Oise, devis gratuit bâtiment, artisan rénovation, GAMAT"
         />
         <meta name="author" content="GAMAT" />
         <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://sasgamat.fr/" />
 
         <meta
           property="og:title"
-          content="GAMAT - Construction & Rénovation en Île-de-France"
+          content="Entreprise BTP Île-de-France | Devis Gratuit - GAMAT"
         />
         <meta
           property="og:description"
-          content="Entreprise familiale spécialisée dans le bâtiment tout corps d'état : construction, rénovation, aménagement. Découvrez nos réalisations et demandez un devis gratuit !"
+          content="Artisan BTP familial en Île-de-France (95, 78, 60). Maçonnerie, toiture, rénovation complète. Devis gratuit sous 48h. ☎ 07 59 59 78 98"
         />
         <meta property="og:type" content="website" />
-       <meta property="og:image" content="/assets/logos/2.png" />
+        <meta property="og:url" content="https://sasgamat.fr/" />
+        <meta
+          property="og:image"
+          content="https://sasgamat.fr/assets/logos/2.png"
+        />
         <meta property="og:locale" content="fr_FR" />
         <meta property="og:site_name" content="GAMAT" />
       </Head>

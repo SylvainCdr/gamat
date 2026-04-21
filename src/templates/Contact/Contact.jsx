@@ -65,16 +65,21 @@ export default function Contact() {
 
         <meta name="author" content="GAMAT" />
         <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://sasgamat.fr/contact" />
         <meta
           property="og:title"
-          content="Contact & Devis | GAMAT - Construction & Rénovation en Île-de-France"
+          content="Devis Gratuit Travaux BTP | Contactez GAMAT - Île-de-France"
         />
         <meta
           property="og:description"
-          content="Contactez GAMAT pour discuter de votre projet de construction ou rénovation en Île-de-France. Obtenez un devis gratuit et personnalisé rapidement."
+          content="Demandez votre devis gratuit pour vos travaux de construction ou rénovation en Île-de-France (95, 78, 60). GAMAT vous rappelle sous 24h. ☎ 07 59 59 78 98"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/assets/logos/2.png" />
+        <meta property="og:url" content="https://sasgamat.fr/contact" />
+        <meta
+          property="og:image"
+          content="https://sasgamat.fr/assets/logos/2.png"
+        />
         <meta property="og:locale" content="fr_FR" />
         <meta property="og:site_name" content="GAMAT" />
       </Head>

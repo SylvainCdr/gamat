@@ -62,6 +62,86 @@ export default function Document() {
           content="jZpo6N_pZlnzson2XHCOkAQAkMc2bAglG2w3H6XOVhY"
         />
 
+        {/* Schema.org LocalBusiness - SEO local */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "HomeAndConstructionBusiness",
+              name: "GAMAT",
+              description:
+                "Entreprise familiale de construction et rénovation tout corps d'état en Île-de-France. Maçonnerie, toiture, charpente, plomberie, électricité, isolation.",
+              url: "https://sasgamat.fr",
+              telephone: "+33759597898",
+              email: "sasgamat@gmail.com",
+              image: "https://sasgamat.fr/assets/logos/2.png",
+              priceRange: "€€",
+              address: {
+                "@type": "PostalAddress",
+                addressRegion: "Île-de-France",
+                addressCountry: "FR",
+              },
+              areaServed: [
+                { "@type": "AdministrativeArea", name: "Val-d'Oise (95)" },
+                { "@type": "AdministrativeArea", name: "Yvelines (78)" },
+                { "@type": "AdministrativeArea", name: "Oise (60)" },
+              ],
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Travaux BTP",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: { "@type": "Service", name: "Maçonnerie" },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Couverture et toiture",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: { "@type": "Service", name: "Charpente" },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Rénovation complète",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: { "@type": "Service", name: "Plomberie" },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: { "@type": "Service", name: "Électricité" },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Isolation thermique",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Peinture et finitions",
+                    },
+                  },
+                ],
+              },
+              sameAs: [],
+            }),
+          }}
+        />
+
         {/* Google Analytics GA4 */}
         <script
           async

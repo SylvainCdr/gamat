@@ -89,28 +89,42 @@ export default function NosPrestations() {
   return (
     <>
       <Head>
-        <title>Nos Prestations - GAMAT</title>
+        <title>
+          Maçonnerie, Toiture, Rénovation Île-de-France | GAMAT - Tous Corps
+          d'État (95, 78, 60)
+        </title>
         <meta
           name="description"
-          content="GAMAT - Entreprise familiale de construction et rénovation tout corps d'état en Île-de-France (95, 78, 60). Qualité, proximité, respect des délais. Demandez votre devis gratuit !"
+          content="GAMAT réalise tous vos travaux en Île-de-France : maçonnerie, couverture, charpente, plomberie, électricité, isolation, peinture. Devis gratuit pour vos projets en Val-d'Oise (95), Yvelines (78) et Oise (60)."
         />
         <meta
           name="keywords"
-          content="GAMAT, construction, rénovation, bâtiment, maçonnerie, couverture, charpente, menuiserie, plomberie, électricité, plâtrerie, peinture, isolation, Île-de-France, Val-d'Oise, Yvelines, Oise, entreprise familiale, devis gratuit"
+          content="maçonnerie Île-de-France, rénovation toiture 95, charpente Val-d'Oise, plomberie Yvelines, électricité Oise, isolation thermique, peinture bâtiment, devis travaux gratuit"
         />
         <meta name="author" content="GAMAT" />
         <meta name="robots" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://sasgamat.fr/gamat-construction-et-renovation"
+        />
 
         <meta
           property="og:title"
-          content="GAMAT - Construction & Rénovation en Île-de-France"
+          content="Nos Prestations BTP | Maçonnerie, Toiture, Rénovation - GAMAT Île-de-France"
         />
         <meta
           property="og:description"
-          content="Entreprise familiale spécialisée dans le bâtiment tout corps d'état : construction, rénovation, aménagement. Découvrez nos réalisations et demandez un devis gratuit !"
+          content="Tous corps d'état en Île-de-France (95, 78, 60) : maçonnerie, couverture, charpente, plomberie, électricité, isolation. Devis gratuit."
         />
         <meta property="og:type" content="website" />
-            <meta property="og:image" content="/assets/logos/2.png" />
+        <meta
+          property="og:url"
+          content="https://sasgamat.fr/gamat-construction-et-renovation"
+        />
+        <meta
+          property="og:image"
+          content="https://sasgamat.fr/assets/logos/2.png"
+        />
         <meta property="og:locale" content="fr_FR" />
         <meta property="og:site_name" content="GAMAT" />
       </Head>

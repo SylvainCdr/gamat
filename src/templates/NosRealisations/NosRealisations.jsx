@@ -56,7 +56,6 @@ export default function NosRealisations() {
     },
   ];
 
-
   // Slider settings for react-slick
   const sliderSettings = {
     dots: true,
@@ -87,16 +86,27 @@ export default function NosRealisations() {
         />
         <meta name="author" content="GAMAT" />
         <meta name="robots" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://sasgamat.fr/les-realisations-gamat"
+        />
         <meta
           property="og:title"
           content="Nos Réalisations | GAMAT - Construction & Rénovation en Île-de-France"
         />
         <meta
           property="og:description"
-          content="Découvrez nos réalisations en construction et rénovation tout corps d'état en Île-de-France (95, 78, 60). Projets de qualité, du gros œuvre aux finitions. Demandez votre devis gratuit !"
+          content="Découvrez nos chantiers réalisés en Île-de-France (95, 78, 60) : rénovation salle de bain, toiture, maçonnerie. Photos avant/après et témoignages clients."
         />
         <meta property="og:type" content="website" />
-         <meta property="og:image" content="/assets/logos/2.png" />
+        <meta
+          property="og:url"
+          content="https://sasgamat.fr/les-realisations-gamat"
+        />
+        <meta
+          property="og:image"
+          content="https://sasgamat.fr/assets/logos/2.png"
+        />
         <meta property="og:locale" content="fr_FR" />
         <meta property="og:site_name" content="GAMAT" />
       </Head>
