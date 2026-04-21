@@ -57,7 +57,10 @@ export default function Document() {
         />
 
         {/* Google Search Console */}
-        <meta name="google-site-verification" content="jZpo6N_pZlnzson2XHCOkAQAkMc2bAglG2w3H6XOVhY" />
+        <meta
+          name="google-site-verification"
+          content="jZpo6N_pZlnzson2XHCOkAQAkMc2bAglG2w3H6XOVhY"
+        />
 
         {/* Google Analytics GA4 */}
         <script
