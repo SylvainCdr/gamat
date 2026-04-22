@@ -68,7 +68,10 @@ function Footer() {
 
       {/* Bottom Bar */}
       <div className={styles.footerBottom}>
-        <p>© 2026 GAMAT — Tous droits réservés</p>
+        <p>
+          © 2026 GAMAT — Tous droits réservés |{" "}
+          <Link href="/mentions-legales">Mentions légales</Link>
+        </p>
         <div className={styles.socialLinks}>
           <a href="#" aria-label="Facebook">
             <i className="fab fa-facebook-f"></i>

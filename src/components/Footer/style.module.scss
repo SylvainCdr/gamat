@@ -113,6 +113,17 @@
     color: rgba(255, 255, 255, 0.5);
     font-weight: 300;
   }
+
+  a {
+    color: rgba(247, 172, 42, 0.839);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--col7);
+    }
+  }
 }
 
 .socialLinks {
