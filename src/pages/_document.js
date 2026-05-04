@@ -26,7 +26,10 @@ export default function Document() {
           content="Entreprise familiale spécialisée dans le bâtiment tout corps d'état : construction, rénovation, aménagement. Découvrez nos réalisations et demandez un devis gratuit !"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/assets/logos/2.png" />
+        <meta
+          property="og:image"
+          content="https://sasgamat.fr/assets/logos/2.png"
+        />
         <meta property="og:locale" content="fr_FR" />
         <meta property="og:site_name" content="GAMAT" />
 
