@@ -99,7 +99,7 @@ export default function NosPrestations() {
         />
         <meta
           name="keywords"
-          content="maçonnerie Île-de-France, rénovation toiture 95, charpente Val-d'Oise, plomberie Yvelines, électricité Oise, isolation thermique, peinture bâtiment, devis travaux gratuit"
+          content="maçonnerie Île-de-France, artisan couvreur, rénovation toiture 95, charpente Val-d'Oise, plomberie Yvelines, électricité Oise, isolation thermique, peinture bâtiment, devis travaux gratuit, Béthemont-la-Forêt, Villiers-Adam, Taverny"
         />
         <meta name="author" content="GAMAT" />
         <meta name="robots" content="index, follow" />

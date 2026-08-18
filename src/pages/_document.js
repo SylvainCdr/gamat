@@ -12,7 +12,7 @@ export default function Document() {
         />
         <meta
           name="keywords"
-          content="GAMAT, construction, rénovation, bâtiment, maçonnerie, couverture, charpente, menuiserie, plomberie, électricité, plâtrerie, peinture, isolation, Île-de-France, Val-d'Oise, Yvelines, Oise, entreprise familiale, devis gratuit"
+          content="GAMAT, construction, rénovation, bâtiment, maçonnerie, couverture, artisan couvreur, charpente, menuiserie, plomberie, électricité, plâtrerie, peinture, isolation, Île-de-France, Val-d'Oise, Yvelines, Oise, Béthemont-la-Forêt, Villiers-Adam, Taverny, entreprise familiale, devis gratuit"
         />
         <meta name="author" content="GAMAT" />
         <meta name="robots" content="index, follow" />
@@ -94,13 +94,49 @@ export default function Document() {
               priceRange: "€€",
               address: {
                 "@type": "PostalAddress",
+                streetAddress: "4 Rue Patouillard Demoriane",
+                postalCode: "95840",
+                addressLocality: "Villiers-Adam",
                 addressRegion: "Île-de-France",
                 addressCountry: "FR",
+              },
+              openingHoursSpecification: {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                ],
+                opens: "08:00",
+                closes: "18:00",
+              },
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "5.0",
+                reviewCount: "8",
               },
               areaServed: [
                 { "@type": "AdministrativeArea", name: "Val-d'Oise (95)" },
                 { "@type": "AdministrativeArea", name: "Yvelines (78)" },
                 { "@type": "AdministrativeArea", name: "Oise (60)" },
+                { "@type": "AdministrativeArea", name: "Paris (75)" },
+                { "@type": "AdministrativeArea", name: "Seine-et-Marne (77)" },
+                { "@type": "AdministrativeArea", name: "Essonne (91)" },
+                { "@type": "AdministrativeArea", name: "Hauts-de-Seine (92)" },
+                {
+                  "@type": "AdministrativeArea",
+                  name: "Seine-Saint-Denis (93)",
+                },
+                { "@type": "AdministrativeArea", name: "Val-de-Marne (94)" },
+                { "@type": "City", name: "Béthemont-la-Forêt" },
+                { "@type": "City", name: "Villiers-Adam" },
+                { "@type": "City", name: "Taverny" },
+                { "@type": "City", name: "Butry-sur-Oise" },
+                { "@type": "City", name: "L'Isle-Adam" },
+                { "@type": "City", name: "Beauchamp" },
+                { "@type": "City", name: "Mériel" },
               ],
               hasOfferCatalog: {
                 "@type": "OfferCatalog",
@@ -114,7 +150,7 @@ export default function Document() {
                     "@type": "Offer",
                     itemOffered: {
                       "@type": "Service",
-                      name: "Couverture et toiture",
+                      name: "Couverture et toiture (artisan couvreur)",
                     },
                   },
                   {
@@ -152,7 +188,7 @@ export default function Document() {
                   },
                 ],
               },
-              sameAs: [],
+              sameAs: ["https://www.google.com/maps?cid=8317657174189964431"],
             }),
           }}
         />

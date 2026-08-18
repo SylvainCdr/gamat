@@ -249,7 +249,11 @@ export default function Home() {
                 mais restons ouverts à des projets en dehors de ce secteur.
               </p>
               <ul>
-                <li>Val-d&apos;Oise (95)</li>
+                <li>
+                  Val-d&apos;Oise (95) : Taverny, Béthemont-la-Forêt,
+                  Villiers-Adam, Butry-sur-Oise, L&apos;Isle-Adam, Beauchamp,
+                  Mériel
+                </li>
                 <li>Yvelines (78)</li>
                 <li>Oise (60)</li>
                 <li>Et toute l&apos;Île-de-France</li>
